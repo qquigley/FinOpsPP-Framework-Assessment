@@ -1,4 +1,4 @@
-# FinOps++-Framework-Assessment
+# FinOps++ Framework Assessment
 A FinOps Assessment perspective as a NIST CSF Community Profile
 
 As organizations move their FinOps practices to shift-left, more of the FinOps optimization and maintenance tasks get pushed to the edge where the Engineers are. In this case, FinOps teams need to move their focus towards supporting the Inform and Operate phases of the FinOps lifecycle. Through building more formal FinOps Policies and Governance standards, FinOps teams can accelerate their iteration through the lifecycle phases to increase their practice maturity for the long run. Pulling inspiration from the Intersecting Discipline of Security, FinOps teams can solidify their position as a trusted partner to the business.
