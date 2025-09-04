@@ -14,6 +14,8 @@ Metadata:
   - Name: Reviewer 3
     Email: reviewer3@example.com
     Date: 2025-09-04 # ISO 8601 date format
+  Profiles: # List of profiles specification is applicable to
+  - Standard
 Specification:
   ID: EX.CS-01
   Domain: Example

@@ -6,14 +6,33 @@ import yaml
 
 @click.group()
 def cli():
+    """FinOps++ administration tool"""
     pass
 
 @cli.group()
-def assessments():
+def generate():
+    """Generate files from YAML specifications"""
     pass
 
-@assessments.command()
-def generate():
+@generate.command()
+@click.option(
+    '--profile',
+    default='standard',
+    type=click.Choice(['standard']), # TODO: probably want to pull the choice from some approved list
+    help='Which assessment profile to generate. Defaults to standard profile',
+)
+@click.option(
+    '--name',
+    default='FinOps++ Framework (test)',
+    help='Name (without extension) of file to generate',
+)
+def assessment(profile, name):
+    """Generate a FinOps++ Assessment from the specifications for a given profile"""
+    click.echo(f'Creating "{name}.xlsx" assessment for {profile} profile')
+
+@generate.command()
+def markdown():
+    """Generate Markdown files from the specifications"""
     pass
 
 @cli.group()
@@ -30,7 +49,7 @@ def list():
 
 @specifications.command()
 @click.option(
-    "--metadata",
+    '--metadata',
     is_flag=True,
     help='Show the Metadata for a Specifications',
 )
