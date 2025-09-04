@@ -1,0 +1,27 @@
+Metadata:
+  Adoption Date: 2025-09-03 # ISO 8601 date format
+  Last Modified: 2025-09-03 # ISO 8601 date format
+  Version: 1.0.0 # Based on Semantic Versioning
+  Reviewers: # List of Reviewers of guideline
+  - Name: Reviewer 1
+    Email: review1@example.com
+  - Name: Reviewer 2
+    Email: reviewer2@example.com
+  - Name: Reviewer 3
+    Email: reviewer3@example.com
+Guideline:
+  ID: EX.CS-01
+  Function: Example
+  Category: Case
+  Subcategory: 01
+  Description: Text based description of what the guideline attempts to address
+  Implementation Types: # List of what how the guideline is implemented
+  - Operational # Example
+  - Management
+  - etc
+  Comments:
+  - Example of a comment directly relating to the guideline. Could be over implementation.
+  - Another example of a comment on the guideline. Is over information not in Description.
+  References:
+  - A reference to other documentation related to guideline.
+  - Could also be references to sets of external controls

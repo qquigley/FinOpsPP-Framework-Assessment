@@ -17,37 +17,37 @@ def generate():
     pass
 
 @cli.group()
-def controls():
-    """Informational command on Controls"""
+def guidelines():
+    """Informational command on Guidelines"""
     pass
 
-@controls.command()
+@guidelines.command()
 def list():
-    """List all Controls by ID"""
-    for file in files('finopspp.controls').iterdir():
+    """List all Guidelines by ID"""
+    for file in files('finopspp.guidelines').iterdir():
         root, _ = os.path.splitext(file.name)
         click.echo(root)
 
-@controls.command()
+@guidelines.command()
 @click.option(
     "--metadata",
     is_flag=True,
-    help='Show the Metadata for a Control.',
+    help='Show the Metadata for a Guidelines.',
 )
 @click.argument('name')
 def show(name, metadata):
-    """Show information on a given Control"""
-    data_type = 'Control'
+    """Show information on a given Guidelines"""
+    data_type = 'Guideline'
     if metadata:
         data_type = 'Metadata'
 
-    control_file = files('finopspp.controls').joinpath(f'{name}.yaml')
-    click.echo(control_file)
-    with open(control_file, 'r') as file:
-        control_data = yaml.safe_load(file)
+    guideline_file = files('finopspp.guidelines').joinpath(f'{name}.yaml')
+    click.echo(guideline_file)
+    with open(guideline_file, 'r') as file:
+        guideline_data = yaml.safe_load(file)
         click.echo(
             yaml.dump(
-                control_data[data_type],
+                guideline_data[data_type],
                 default_flow_style=False,
                 indent=4
             )
