@@ -20,10 +20,10 @@ dependencies = [
 finopspp = "finopspp.__main__:cli"
 
 [tool.setuptools]
-packages = ["finopspp", "finopspp.guidelines"]
+packages = ["finopspp", "finopspp.specifications"]
 
 [tool.setuptools.package-dir]
-"finopspp.guidelines" = "guidelines"
+"finopspp.specifications" = "specifications"
 
 [tool.setuptools.package-data]
-"finopspp.guidelines" = ["*.yaml"]
+"finopspp.specifications" = ["*.yaml"]

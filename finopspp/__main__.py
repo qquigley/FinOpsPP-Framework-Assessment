@@ -17,37 +17,37 @@ def generate():
     pass
 
 @cli.group()
-def guidelines():
-    """Informational command on Guidelines"""
+def specifications():
+    """Informational command on Specifications"""
     pass
 
-@guidelines.command()
+@specifications.command()
 def list():
-    """List all Guidelines by ID"""
-    for file in files('finopspp.guidelines').iterdir():
+    """List all Specifications by ID"""
+    for file in files('finopspp.specifications').iterdir():
         root, _ = os.path.splitext(file.name)
         click.echo(root)
 
-@guidelines.command()
+@specifications.command()
 @click.option(
     "--metadata",
     is_flag=True,
-    help='Show the Metadata for a Guidelines.',
+    help='Show the Metadata for a Specifications',
 )
-@click.argument('name')
-def show(name, metadata):
-    """Show information on a given Guidelines"""
-    data_type = 'Guideline'
+@click.argument('id')
+def show(id, metadata):
+    """Show information on a given specification by ID"""
+    data_type = 'Specification'
     if metadata:
         data_type = 'Metadata'
 
-    guideline_file = files('finopspp.guidelines').joinpath(f'{name}.yaml')
-    click.echo(guideline_file)
-    with open(guideline_file, 'r') as file:
-        guideline_data = yaml.safe_load(file)
+    specification_file = files('finopspp.specifications').joinpath(f'{id}.yaml')
+    click.echo(specification_file)
+    with open(specification_file, 'r') as file:
+        specification_data = yaml.safe_load(file)
         click.echo(
             yaml.dump(
-                guideline_data[data_type],
+                specification_data[data_type],
                 default_flow_style=False,
                 sort_keys=False,
                 indent=2

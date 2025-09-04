@@ -14,11 +14,11 @@ Metadata:
   - Name: Reviewer 3
     Email: reviewer3@example.com
     Date: 2025-09-04 # ISO 8601 date format
-Guideline:
+Specification:
   ID: EX.CS-01
-  Function: Example
-  Category: Case
-  Subcategory: 01
+  Domain: Example
+  Capability: Case
+  Action: 01
   Description: Text based description of what the guideline attempts to address
   Implementation Types: # List of what how the guideline is implemented
   - Operational # Example
