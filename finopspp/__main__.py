@@ -50,7 +50,7 @@ def show(name, metadata):
                 guideline_data[data_type],
                 default_flow_style=False,
                 sort_keys=False,
-                indent=4
+                indent=2
             )
         )
 
