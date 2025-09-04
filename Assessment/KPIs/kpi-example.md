@@ -7,4 +7,4 @@ Domain: Understanding Usage & Cost
 Capability: Data Ingestion
 
 Related Controls:
-- [Ingestion Schedule](#ingestion-schedule)
+- [Ingestion Schedule](#../Controls/ingestion-schedule.md)
