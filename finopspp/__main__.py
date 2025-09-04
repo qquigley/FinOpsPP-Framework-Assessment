@@ -49,6 +49,7 @@ def show(name, metadata):
             yaml.dump(
                 guideline_data[data_type],
                 default_flow_style=False,
+                sort_keys=False,
                 indent=4
             )
         )
