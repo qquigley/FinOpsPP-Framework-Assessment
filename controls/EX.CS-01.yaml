@@ -1,0 +1,20 @@
+Metadata:
+  Adoption Date: 2025-09-03 # ISO 8601 date format
+  Last Modified: 2025-09-03 # ISO 8601 date format
+  Version: 1.0.0 # Based on Semantic Versioning
+  Reviewers: # List of Reviewers of Control
+  - Name: Reviewer 1
+    Email: review1@example.com
+  - Name: Reviewer 2
+    Email: reviewer2@example.com
+  - Name: Reviewer 3
+    Email: reviewer3@example.com
+Control:
+  Description: Text based description of what the control attempts to address
+  Implementation Types: # List of what how the control is implemented
+  - Operational # Example
+  - Management
+  - etc
+  Comments:
+  - Example of a comment directly relating to the control. Could be over implementation.
+  - Another example of a comment on the control. Is over information not in Description.
