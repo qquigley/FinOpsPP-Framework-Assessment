@@ -24,6 +24,7 @@ finopspp = "finopspp.__main__:cli"
 packages = ["finopspp", "finopspp.specifications"]
 
 [tool.setuptools.package-dir]
+"finopspp" = "tools"
 "finopspp.specifications" = "specifications"
 
 [tool.setuptools.package-data]
