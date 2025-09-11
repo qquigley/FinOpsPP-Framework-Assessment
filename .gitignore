@@ -1,3 +1,7 @@
 .vscode
 .DS_Store
 ~$FinOps++ Framework.xlsx
+.venv/
+build/
+finopspp.egg-info/
+__pycache__/
