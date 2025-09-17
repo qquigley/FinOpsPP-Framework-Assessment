@@ -17,17 +17,17 @@
             <table>
                 <tr>
                     <td>
-                    Sub Category 1
+                    Control 1
                     </td>
                 </tr>
                 <tr>
                     <td>
-                    Sub Category 2
+                    Control 2
                     </td>
                 </tr>
                 <tr>
                     <td>
-                    Sub Category 3
+                    Control 3
                     </td>
                 </tr>
             </table>
@@ -41,17 +41,17 @@
             <table>
                 <tr>
                     <td>
-                    Sub Category 1
+                    Control 1
                     </td>
                 </tr>
                 <tr>
                     <td>
-                    Sub Category 2
+                    Control 2
                     </td>
                 </tr>
                 <tr>
                     <td>
-                    Sub Category 3
+                    Control 3
                     </td>
                 </tr>
             </table>
@@ -65,17 +65,17 @@
             <table>
                 <tr>
                     <td>
-                    Sub Category 1
+                    Control 1
                     </td>
                 </tr>
                 <tr>
                     <td>
-                    Sub Category 2
+                    Control 2
                     </td>
                 </tr>
                 <tr>
                     <td>
-                    Sub Category 3
+                    Control 3
                     </td>
                 </tr>
             </table>
@@ -92,17 +92,17 @@
             <table>
                 <tr>
                     <td>
-                    Sub Category 1
+                    Control 1
                     </td>
                 </tr>
                 <tr>
                     <td>
-                    Sub Category 2
+                    Control 2
                     </td>
                 </tr>
                 <tr>
                     <td>
-                    Sub Category 3
+                    Control 3
                     </td>
                 </tr>
             </table>
@@ -115,17 +115,17 @@
             <table>
                 <tr>
                     <td>
-                    Sub Category 1
+                    Control 1
                     </td>
                 </tr>
                 <tr>
                     <td>
-                    Sub Category 2
+                    Control 2
                     </td>
                 </tr>
                 <tr>
                     <td>
-                    Sub Category 3
+                    Control 3
                     </td>
                 </tr>
             </table>
@@ -139,17 +139,17 @@
             <table>
                 <tr>
                     <td>
-                    Sub Category 1
+                    Control 1
                     </td>
                 </tr>
                 <tr>
                     <td>
-                    Sub Category 2
+                    Control 2
                     </td>
                 </tr>
                 <tr>
                     <td>
-                    Sub Category 3
+                    Control 3
                     </td>
                 </tr>
             </table>
