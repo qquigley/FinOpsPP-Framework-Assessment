@@ -1,0 +1,30 @@
+Metadata:
+  Proposed: 2025-09-16
+  Adoption: Null
+  Modified: Null
+  Version: 0.0.1
+  Status: Proposed
+  Approvers:
+  - Name: Null
+    Email: Null
+    Date: Null
+Specification:
+  ID: 001
+  Title: Manage the FinOps Practice
+  Capabilities:
+  - Number: 006
+    Overrides: Null
+  - Number: 009
+    Overrides: Null
+  - Number: 010
+    Overrides: Null
+  - Number: 011
+    Overrides: Null
+  - Number: 012
+    Overrides: Null
+  - Number: 014
+    Overrides: Null
+  - Number: 015
+    Overrides: Null
+  - Number: 017
+    Overrides: Null

@@ -1,0 +1,24 @@
+Metadata:
+  Proposed: 2025-09-16
+  Adoption: Null
+  Modified: Null
+  Version: 0.0.1
+  Status: Proposed
+  Approvers:
+  - Name: Null
+    Email: Null
+    Date: Null
+Specification:
+  ID: 002
+  Title: Optimize Usage & Cost
+  Capabilities:
+  - Number: 003
+    Overrides: Null
+  - Number: 007
+    Overrides: Null
+  - Number: 016
+    Overrides: Null
+  - Number: 019
+    Overrides: Null
+  - Number: 022
+    Overrides: Null

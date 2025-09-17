@@ -1,0 +1,25 @@
+Metadata:
+  Proposed: 2025-09-16
+  Adoption: Null
+  Modified: Null
+  Version: 0.0.1
+  Status: Proposed
+  Approvers:
+  - Name: Null
+    Email: Null
+    Date: Null
+Specification:
+  ID: 004
+  Title: Quantify Business Value
+  Capabilities:
+  - Number: 004
+    Overrides: Null
+  - Number: 005
+    Overrides: Null
+  - Number: 013
+    Overrides: Null
+  - Number: 018
+    Overrides: Null
+  - Number: 021
+    Overrides: Null
+  

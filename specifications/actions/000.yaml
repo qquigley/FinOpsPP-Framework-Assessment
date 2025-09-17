@@ -17,10 +17,7 @@ Metadata:
   Profiles: # List of profiles specification is applicable to
   - Standard
 Specification:
-  ID: EX.CS-01
-  Domain: Example
-  Capability: Case
-  Action: 01
+  ID: 000
   Description: Text based description of what the guideline attempts to address
   Implementation Types: # List of what how the guideline is implemented
   - Operational # Example
