@@ -13,17 +13,11 @@ Specification:
   Title: Planning & Estimating
   Description: null
   Actions:
-  - Number: 30
-    Overrides: null
-  - Number: 31
-    Overrides: null
-  - Number: 32
-    Overrides: null
-  - Number: 33
-    Overrides: null
-  - Number: 34
-    Overrides: null
-  - Number: 35
-    Overrides: null
-  - Number: 36
-    Overrides: null
+  - ID: 30
+  - ID: 31
+  - ID: 32
+  - ID: 33
+  - ID: 34
+  - ID: 35
+  - ID: 36
+  Overrides: null

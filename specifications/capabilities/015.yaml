@@ -13,15 +13,10 @@ Specification:
   Title: Invoicing & Chargeback
   Description: null
   Actions:
-  - Number: 107
-    Overrides: null
-  - Number: 108
-    Overrides: null
-  - Number: 109
-    Overrides: null
-  - Number: 110
-    Overrides: null
-  - Number: 111
-    Overrides: null
-  - Number: 112
-    Overrides: null
+  - ID: 107
+  - ID: 108
+  - ID: 109
+  - ID: 110
+  - ID: 111
+  - ID: 112
+  Overrides: null

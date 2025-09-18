@@ -52,12 +52,7 @@ def assessment(profile, name):
     '--profile',
     default='FinOps++',
     type=click.Choice(list(profiles().keys())),
-    help='Which assessment profile to generate. Defaults to "FinOps++',
-)
-@click.option(
-    '--markdown-type',
-    default='framework',
-    help='Which markdown to generate',
+    help='Which assessment profile to generate. Defaults to "FinOps++"',
 )
 @click.option(
     '--markdown-type',
@@ -67,7 +62,7 @@ def assessment(profile, name):
 def markdown(profile, markdown_type):
     """Generate Markdown files from the specifications"""
     env = Environment(loader=PackageLoader('finopspp', 'templates'))
-    template = env.get_template('framework.md.j2')
+    template = env.get_template(f'{markdown_type}.md.j2')
 
     cap_files = files('finopspp.specifications.capabilities')
     action_files = files('finopspp.specifications.actions')
@@ -81,12 +76,12 @@ def markdown(profile, markdown_type):
         actions = doc.get('Actions')
         descriptions = []
         for action in actions:
-            action_number = action.get('Number')
-            if not action_number:
+            action_id = action.get('ID')
+            if not action_id:
                 continue
 
-            action_number = str(action_number)
-            file = '0'*(3-len(action_number)) + action_number
+            action_id = str(action_id)
+            file = '0'*(3-len(action_id)) + action_id
             with open(action_files.joinpath(f'{file}.yaml'), 'r') as yaml_file:
                 description = yaml.safe_load(
                     yaml_file
@@ -97,7 +92,7 @@ def markdown(profile, markdown_type):
         capabilities[title] = '<br>'.join(descriptions)
 
     output = template.render(capabilities=capabilities)
-    with open('framework_test.md', 'w') as outfile:
+    with open(f'{profile} (test).md', 'w') as outfile:
         outfile.write(output)
 
 @cli.group()
@@ -182,32 +177,32 @@ def list_specs(profile):
     cap_files = files('finopspp.specifications.capabilities')
     click.echo(f'Fully qualified IDs for {profile}. Profile ID: {profile_id}')
     for domain in domains:
-        domain_number = domain.get('Number')
-        if not domain_number:
+        domain_id = domain.get('ID')
+        if not domain_id:
             continue
 
-        domain_number = str(domain_number)
-        file = '0'*(3-len(domain_number)) + domain_number
+        domain_id = str(domain_id)
+        file = '0'*(3-len(domain_id)) + domain_id
         with open(domain_files.joinpath(f'{file}.yaml'), 'r') as yaml_file:
             capabilities = yaml.safe_load(
                 yaml_file
             ).get('Specification').get('Capabilities')
 
         for capability in capabilities:
-            capability_number = capability.get('Number')
-            if not capability_number:
+            capability_id = capability.get('ID')
+            if not capability_id:
                 continue
 
-            capability_number = str(capability_number)
-            file = '0'*(3-len(capability_number)) + capability_number
+            capability_id = str(capability_id)
+            file = '0'*(3-len(capability_id)) + capability_id
             with open(cap_files.joinpath(f'{file}.yaml'), 'r') as yaml_file:
                 actions = yaml.safe_load(
                     yaml_file
                 ).get('Specification').get('Actions')
 
             for action in actions:
-                action_number = action.get('Number')
-                unique_id = f'{domain_number}.{capability_number}-{action_number}'
+                action_id = action.get('ID')
+                unique_id = f'{domain_id}.{capability_id}-{action_id}'
                 click.echo(unique_id)
 
 @specifications.command()

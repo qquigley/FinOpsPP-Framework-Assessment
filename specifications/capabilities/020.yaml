@@ -13,17 +13,11 @@ Specification:
   Title: Reporting & Analytics
   Description: null
   Actions:
-  - Number: 16
-    Overrides: null
-  - Number: 17
-    Overrides: null
-  - Number: 18
-    Overrides: null
-  - Number: 19
-    Overrides: null
-  - Number: 20
-    Overrides: null
-  - Number: 21
-    Overrides: null
-  - Number: 22
-    Overrides: null
+  - ID: 16
+  - ID: 17
+  - ID: 18
+  - ID: 19
+  - ID: 20
+  - ID: 21
+  - ID: 22
+  Overrides: null

@@ -13,19 +13,12 @@ Specification:
   Title: Data Ingestion
   Description: null
   Actions:
-  - Number: 1
-    Overrides: null
-  - Number: 2
-    Overrides: null
-  - Number: 3
-    Overrides: null
-  - Number: 4
-    Overrides: null
-  - Number: 5
-    Overrides: null
-  - Number: 6
-    Overrides: null
-  - Number: 7
-    Overrides: null
-  - Number: 8
-    Overrides: null
+  - ID: 1
+  - ID: 2
+  - ID: 3
+  - ID: 4
+  - ID: 5
+  - ID: 6
+  - ID: 7
+  - ID: 8
+  Overrides: null

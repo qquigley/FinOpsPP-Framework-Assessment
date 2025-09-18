@@ -13,15 +13,10 @@ Specification:
   Title: Forecasting
   Description: null
   Actions:
-  - Number: 37
-    Overrides: null
-  - Number: 38
-    Overrides: null
-  - Number: 39
-    Overrides: null
-  - Number: 40
-    Overrides: null
-  - Number: 41
-    Overrides: null
-  - Number: 42
-    Overrides: null
+  - ID: 37
+  - ID: 38
+  - ID: 39
+  - ID: 40
+  - ID: 41
+  - ID: 42
+  Overrides: null

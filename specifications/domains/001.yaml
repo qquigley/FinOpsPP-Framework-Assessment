@@ -13,19 +13,12 @@ Specification:
   Title: Manage the FinOps Practice
   Description: null
   Capabilities:
-  - Number: 6
-    Overrides: null
-  - Number: 9
-    Overrides: null
-  - Number: 10
-    Overrides: null
-  - Number: 11
-    Overrides: null
-  - Number: 12
-    Overrides: null
-  - Number: 14
-    Overrides: null
-  - Number: 15
-    Overrides: null
-  - Number: 17
-    Overrides: null
+  - ID: 6
+  - ID: 9
+  - ID: 10
+  - ID: 11
+  - ID: 12
+  - ID: 14
+  - ID: 15
+  - ID: 17
+  Overrides: null

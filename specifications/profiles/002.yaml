@@ -13,5 +13,349 @@ Specification:
   Title: FinOps++
   Description: null
   Domains:
-  - Number: null
-    Overrides: null
+  - Title: Manage the FinOps Practice
+    Description: null
+    Capabilities:
+    - Title: Cloud Policy & Governance
+      Description: null
+      Actions:
+      - ID: 102
+        Overrides: null
+      - ID: 103
+        Overrides: null
+      - ID: 104
+        Overrides: null
+      - ID: 105
+        Overrides: null
+      - ID: 106
+        Overrides: null
+    - Title: FinOps Assessment
+      Description: null
+      Actions:
+      - ID: 113
+        Overrides: null
+      - ID: 114
+        Overrides: null
+      - ID: 115
+        Overrides: null
+      - ID: 116
+        Overrides: null
+      - ID: 117
+        Overrides: null
+    - Title: FinOps Education & Enablement
+      Description: null
+      Actions:
+      - ID: 97
+        Overrides: null
+      - ID: 98
+        Overrides: null
+      - ID: 99
+        Overrides: null
+      - ID: 100
+        Overrides: null
+      - ID: 101
+        Overrides: null
+    - Title: FinOps Practice Operations
+      Description: null
+      Actions:
+      - ID: 91
+        Overrides: null
+      - ID: 92
+        Overrides: null
+      - ID: 93
+        Overrides: null
+      - ID: 94
+        Overrides: null
+      - ID: 95
+        Overrides: null
+      - ID: 96
+        Overrides: null
+    - Title: FinOps Tools & Services
+      Description: null
+      Actions:
+      - ID: 124
+        Overrides: null
+      - ID: 125
+        Overrides: null
+      - ID: 126
+        Overrides: null
+      - ID: 127
+        Overrides: null
+      - ID: 128
+        Overrides: null
+    - Title: Intersecting Disciplines
+      Description: null
+      Actions:
+      - ID: 129
+        Overrides: null
+      - ID: 130
+        Overrides: null
+      - ID: 131
+        Overrides: null
+      - ID: 132
+        Overrides: null
+      - ID: 133
+        Overrides: null
+      - ID: 134
+        Overrides: null
+    - Title: Invoicing & Chargeback
+      Description: null
+      Actions:
+      - ID: 107
+        Overrides: null
+      - ID: 108
+        Overrides: null
+      - ID: 109
+        Overrides: null
+      - ID: 110
+        Overrides: null
+      - ID: 111
+        Overrides: null
+      - ID: 112
+        Overrides: null
+    - Title: Onboarding Workloads
+      Description: null
+      Actions:
+      - ID: 118
+        Overrides: null
+      - ID: 119
+        Overrides: null
+      - ID: 120
+        Overrides: null
+      - ID: 121
+        Overrides: null
+      - ID: 122
+        Overrides: null
+      - ID: 123
+        Overrides: null
+  - Title: Optimize Usage & Cost
+    Description: null
+    Capabilities:
+    - Title: Architecting for Cloud
+      Description: null
+      Actions:
+      - ID: 61
+        Overrides: null
+      - ID: 62
+        Overrides: null
+      - ID: 63
+        Overrides: null
+      - ID: 64
+        Overrides: null
+      - ID: 65
+        Overrides: null
+      - ID: 66
+        Overrides: null
+    - Title: Cloud Sustainability
+      Description: null
+      Actions:
+      - ID: 85
+        Overrides: null
+      - ID: 86
+        Overrides: null
+      - ID: 87
+        Overrides: null
+      - ID: 88
+        Overrides: null
+      - ID: 89
+        Overrides: null
+      - ID: 90
+        Overrides: null
+    - Title: Licensing & SaaS
+      Description: null
+      Actions:
+      - ID: 73
+        Overrides: null
+      - ID: 74
+        Overrides: null
+      - ID: 75
+        Overrides: null
+      - ID: 76
+        Overrides: null
+      - ID: 77
+        Overrides: null
+      - ID: 78
+        Overrides: null
+    - Title: Rate Optimization
+      Description: null
+      Actions:
+      - ID: 79
+        Overrides: null
+      - ID: 80
+        Overrides: null
+      - ID: 81
+        Overrides: null
+      - ID: 82
+        Overrides: null
+      - ID: 83
+        Overrides: null
+      - ID: 84
+        Overrides: null
+    - Title: Workload Optimization
+      Description: null
+      Actions:
+      - ID: 67
+        Overrides: null
+      - ID: 68
+        Overrides: null
+      - ID: 69
+        Overrides: null
+      - ID: 70
+        Overrides: null
+      - ID: 71
+        Overrides: null
+      - ID: 72
+        Overrides: null
+  - Title: Quantify Business Value
+    Description: null
+    Capabilities:
+    - Title: Benchmarking
+      Description: null
+      Actions:
+      - ID: 49
+        Overrides: null
+      - ID: 50
+        Overrides: null
+      - ID: 51
+        Overrides: null
+      - ID: 52
+        Overrides: null
+      - ID: 53
+        Overrides: null
+      - ID: 54
+        Overrides: null
+    - Title: Budgeting
+      Description: null
+      Actions:
+      - ID: 43
+        Overrides: null
+      - ID: 44
+        Overrides: null
+      - ID: 45
+        Overrides: null
+      - ID: 46
+        Overrides: null
+      - ID: 47
+        Overrides: null
+      - ID: 48
+        Overrides: null
+    - Title: Forecasting
+      Description: null
+      Actions:
+      - ID: 37
+        Overrides: null
+      - ID: 38
+        Overrides: null
+      - ID: 39
+        Overrides: null
+      - ID: 40
+        Overrides: null
+      - ID: 41
+        Overrides: null
+      - ID: 42
+        Overrides: null
+    - Title: Planning & Estimating
+      Description: null
+      Actions:
+      - ID: 30
+        Overrides: null
+      - ID: 31
+        Overrides: null
+      - ID: 32
+        Overrides: null
+      - ID: 33
+        Overrides: null
+      - ID: 34
+        Overrides: null
+      - ID: 35
+        Overrides: null
+      - ID: 36
+        Overrides: null
+    - Title: Unit Economics
+      Description: null
+      Actions:
+      - ID: 55
+        Overrides: null
+      - ID: 56
+        Overrides: null
+      - ID: 57
+        Overrides: null
+      - ID: 58
+        Overrides: null
+      - ID: 59
+        Overrides: null
+      - ID: 60
+        Overrides: null
+  - Title: Understand Usage & Cost
+    Description: null
+    Capabilities:
+    - Title: Allocation
+      Description: null
+      Actions:
+      - ID: 9
+        Overrides: null
+      - ID: 10
+        Overrides: null
+      - ID: 11
+        Overrides: null
+      - ID: 12
+        Overrides: null
+      - ID: 13
+        Overrides: null
+      - ID: 14
+        Overrides: null
+      - ID: 15
+        Overrides: null
+    - Title: Anomaly Management
+      Description: null
+      Actions:
+      - ID: 23
+        Overrides: null
+      - ID: 24
+        Overrides: null
+      - ID: 25
+        Overrides: null
+      - ID: 26
+        Overrides: null
+      - ID: 27
+        Overrides: null
+      - ID: 28
+        Overrides: null
+      - ID: 29
+        Overrides: null
+    - Title: Data Ingestion
+      Description: null
+      Actions:
+      - ID: 1
+        Overrides: null
+      - ID: 2
+        Overrides: null
+      - ID: 3
+        Overrides: null
+      - ID: 4
+        Overrides: null
+      - ID: 5
+        Overrides: null
+      - ID: 6
+        Overrides: null
+      - ID: 7
+        Overrides: null
+      - ID: 8
+        Overrides: null
+    - Title: Reporting & Analytics
+      Description: null
+      Actions:
+      - ID: 16
+        Overrides: null
+      - ID: 17
+        Overrides: null
+      - ID: 18
+        Overrides: null
+      - ID: 19
+        Overrides: null
+      - ID: 20
+        Overrides: null
+      - ID: 21
+        Overrides: null
+      - ID: 22
+        Overrides: null

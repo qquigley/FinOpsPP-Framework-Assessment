@@ -13,13 +13,9 @@ Specification:
   Title: Cloud Policy & Governance
   Description: null
   Actions:
-  - Number: 102
-    Overrides: null
-  - Number: 103
-    Overrides: null
-  - Number: 104
-    Overrides: null
-  - Number: 105
-    Overrides: null
-  - Number: 106
-    Overrides: null
+  - ID: 102
+  - ID: 103
+  - ID: 104
+  - ID: 105
+  - ID: 106
+  Overrides: null

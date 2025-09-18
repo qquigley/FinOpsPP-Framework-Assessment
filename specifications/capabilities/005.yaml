@@ -13,15 +13,10 @@ Specification:
   Title: Budgeting
   Description: null
   Actions:
-  - Number: 43
-    Overrides: null
-  - Number: 44
-    Overrides: null
-  - Number: 45
-    Overrides: null
-  - Number: 46
-    Overrides: null
-  - Number: 47
-    Overrides: null
-  - Number: 48
-    Overrides: null
+  - ID: 43
+  - ID: 44
+  - ID: 45
+  - ID: 46
+  - ID: 47
+  - ID: 48
+  Overrides: null

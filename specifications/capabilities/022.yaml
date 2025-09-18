@@ -13,15 +13,10 @@ Specification:
   Title: Workload Optimization
   Description: null
   Actions:
-  - Number: 67
-    Overrides: null
-  - Number: 68
-    Overrides: null
-  - Number: 69
-    Overrides: null
-  - Number: 70
-    Overrides: null
-  - Number: 71
-    Overrides: null
-  - Number: 72
-    Overrides: null
+  - ID: 67
+  - ID: 68
+  - ID: 69
+  - ID: 70
+  - ID: 71
+  - ID: 72
+  Overrides: null

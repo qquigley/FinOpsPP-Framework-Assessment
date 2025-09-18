@@ -10,18 +10,13 @@ Metadata:
     Date: null
 Specification:
   ID: 3
-  Title: Architecting for Cloud Definition
+  Title: Architecting for Cloud
   Description: null
   Actions:
-  - Number: 61
-    Overrides: null
-  - Number: 62
-    Overrides: null
-  - Number: 63
-    Overrides: null
-  - Number: 64
-    Overrides: null
-  - Number: 65
-    Overrides: null
-  - Number: 66
-    Overrides: null
+  - ID: 61
+  - ID: 62
+  - ID: 63
+  - ID: 64
+  - ID: 65
+  - ID: 66
+  Overrides: null

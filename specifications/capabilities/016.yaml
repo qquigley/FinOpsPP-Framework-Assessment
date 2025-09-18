@@ -13,15 +13,10 @@ Specification:
   Title: Licensing & SaaS
   Description: null
   Actions:
-  - Number: 73
-    Overrides: null
-  - Number: 74
-    Overrides: null
-  - Number: 75
-    Overrides: null
-  - Number: 76
-    Overrides: null
-  - Number: 77
-    Overrides: null
-  - Number: 78
-    Overrides: null
+  - ID: 73
+  - ID: 74
+  - ID: 75
+  - ID: 76
+  - ID: 77
+  - ID: 78
+  Overrides: null

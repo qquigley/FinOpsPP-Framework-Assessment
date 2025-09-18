@@ -13,15 +13,10 @@ Specification:
   Title: Intersecting Disciplines
   Description: null
   Actions:
-  - Number: 129
-    Overrides: null
-  - Number: 130
-    Overrides: null
-  - Number: 131
-    Overrides: null
-  - Number: 132
-    Overrides: null
-  - Number: 133
-    Overrides: null
-  - Number: 134
-    Overrides: null
+  - ID: 129
+  - ID: 130
+  - ID: 131
+  - ID: 132
+  - ID: 133
+  - ID: 134
+  Overrides: null

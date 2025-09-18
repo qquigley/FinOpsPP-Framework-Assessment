@@ -13,13 +13,14 @@ Specification:
   Title: Optimize Usage & Cost
   Description: null
   Capabilities:
-  - Number: 3
-    Overrides: null
-  - Number: 7
-    Overrides: null
-  - Number: 16
-    Overrides: null
-  - Number: 19
-    Overrides: null
-  - Number: 22
-    Overrides: null
+  - ID: 3
+  - ID: 7
+  - ID: 16
+  - ID: 19
+  - ID: 22
+  Overrides:
+  - Profile: FinOps++
+    ChangeTitle: Usage & Cost
+    ChangeDescription: Domain for understanding, as well as optimizing usage as cost
+    DropIDs: [7]
+    AddIDs: [1, 2, 8, 20]

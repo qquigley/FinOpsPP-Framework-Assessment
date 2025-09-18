@@ -13,13 +13,9 @@ Specification:
   Title: FinOps Assessment
   Description: null
   Actions:
-  - Number: 113
-    Overrides: null
-  - Number: 114
-    Overrides: null
-  - Number: 115
-    Overrides: null
-  - Number: 116
-    Overrides: null
-  - Number: 117
-    Overrides: null
+  - ID: 113
+  - ID: 114
+  - ID: 115
+  - ID: 116
+  - ID: 117
+  Overrides: null

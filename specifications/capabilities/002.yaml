@@ -13,17 +13,11 @@ Specification:
   Title: Anomaly Management
   Description: null
   Actions:
-  - Number: 23
-    Overrides: null
-  - Number: 24
-    Overrides: null
-  - Number: 25
-    Overrides: null
-  - Number: 26
-    Overrides: null
-  - Number: 27
-    Overrides: null
-  - Number: 28
-    Overrides: null
-  - Number: 29
-    Overrides: null
+  - ID: 23
+  - ID: 24
+  - ID: 25
+  - ID: 26
+  - ID: 27
+  - ID: 28
+  - ID: 29
+  Overrides: null

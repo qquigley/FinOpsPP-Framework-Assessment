@@ -13,15 +13,10 @@ Specification:
   Title: Cloud Sustainability
   Description: null
   Actions:
-  - Number: 85
-    Overrides: null
-  - Number: 86
-    Overrides: null
-  - Number: 87
-    Overrides: null
-  - Number: 88
-    Overrides: null
-  - Number: 89
-    Overrides: null
-  - Number: 90
-    Overrides: null
+  - ID: 85
+  - ID: 86
+  - ID: 87
+  - ID: 88
+  - ID: 89
+  - ID: 90
+  Overrides: null

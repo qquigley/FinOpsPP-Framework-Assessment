@@ -13,11 +13,7 @@ Specification:
   Title: FinOps Foundation
   Description: null
   Domains:
-  - Number: 1
-    Overrides: null
-  - Number: 2
-    Overrides: null
-  - Number: 3
-    Overrides: null
-  - Number: 4
-    Overrides: null
+  - ID: 1
+  - ID: 2
+  - ID: 3
+  - ID: 4

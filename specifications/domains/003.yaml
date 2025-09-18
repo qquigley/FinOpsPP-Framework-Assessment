@@ -9,17 +9,13 @@ Metadata:
     Email: null
     Date: null
 Specification:
-  ID: 4
+  ID: 3
   Title: Quantify Business Value
   Description: null
   Capabilities:
-  - Number: 4
-    Overrides: null
-  - Number: 5
-    Overrides: null
-  - Number: 13
-    Overrides: null
-  - Number: 18
-    Overrides: null
-  - Number: 21
-    Overrides: null
+  - ID: 4
+  - ID: 5
+  - ID: 13
+  - ID: 18
+  - ID: 21
+  Overrides: null
