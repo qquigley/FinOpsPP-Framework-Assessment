@@ -1,0 +1,24 @@
+Metadata:
+  Proposed: 2025-09-16
+  Adoption: null
+  Modified: null
+  Version: 0.0.1
+  Status: Proposed
+  Approvers:
+  - Name: null
+    Email: null
+    Date: null
+Specification:
+  ID: 1
+  Title: Manage the FinOps Practice
+  Description: null
+  Capabilities:
+  - ID: 6
+  - ID: 9
+  - ID: 10
+  - ID: 11
+  - ID: 12
+  - ID: 14
+  - ID: 15
+  - ID: 17
+  Overrides: null
