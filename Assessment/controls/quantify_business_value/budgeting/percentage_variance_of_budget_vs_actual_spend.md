@@ -1,12 +1,12 @@
-## Ingestion Schedule
+## Percentage Variance of Budgeted vs Actual Cloud Spend
 
-Capabilities Addressed: Data Ingestion
+Capabilities Addressed: Budgeting
 
 **Weight:** High
 
 **Control Statement:**
 
-Provide the most up to data as complete data as possible.
+Provide an accurate budget to protect the business from financial risk.
 
 **Supplemental Guidance:**
 
@@ -17,16 +17,13 @@ blah blah blah blah blah blah blah blah blah blah
 blah blah blah blah blah blah blah blah blah blah 
 blah blah blah blah blah blah blah blah blah blah 
 
+**Formula:**
+
+x = budget 
+y = actual spend
+
+(x - y) / x = variance
+
 **Scoring Guide:**
 
-Instant: 10
-
-24 hours: 8
-
-48 hours: 5
-
-5 days: 3
-
-1 week: 1
-
-Longer than 1 week: 0
+(1 - ratio) * 10
