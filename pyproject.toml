@@ -25,6 +25,7 @@ packages = ["finopspp", "finopspp.specifications"]
 
 [tool.setuptools.package-dir]
 "finopspp" = "tools"
+"finopspp.templates" = "tools/templates"
 "finopspp.specifications" = "specifications"
 
 [tool.setuptools.package-data]

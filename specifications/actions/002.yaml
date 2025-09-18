@@ -11,7 +11,7 @@ Metadata:
 Specification:
   ID: 2
   Title: null
-  Description: Choose tooling to land/validate datasets (e.g., CUR, exports, telemetry).
+  Description: Choose tooling to land/validate datasets.
   Implementation Types:
   - null
   References:
@@ -19,4 +19,5 @@ Specification:
     Link: null
     Comment: null
   Notes:
-  - null
+  - >-
+    Examples include CUR, exports, telemetry

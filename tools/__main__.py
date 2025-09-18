@@ -3,6 +3,7 @@ from importlib.resources import files
 
 import click
 import yaml
+from jinja2 import Environment, PackageLoader
 
 PROFILES_MAP = {}
 def profiles():
@@ -47,9 +48,57 @@ def assessment(profile, name):
     click.echo(f'Creating "{name}.xlsx" assessment for {profile} profile')
 
 @generate.command()
-def markdown():
+@click.option(
+    '--profile',
+    default='FinOps++',
+    type=click.Choice(list(profiles().keys())),
+    help='Which assessment profile to generate. Defaults to "FinOps++',
+)
+@click.option(
+    '--markdown-type',
+    default='framework',
+    help='Which markdown to generate',
+)
+@click.option(
+    '--markdown-type',
+    default='framework',
+    help='Which markdown to generate',
+)
+def markdown(profile, markdown_type):
     """Generate Markdown files from the specifications"""
-    pass
+    env = Environment(loader=PackageLoader('finopspp', 'templates'))
+    template = env.get_template('framework.md.j2')
+
+    cap_files = files('finopspp.specifications.capabilities')
+    action_files = files('finopspp.specifications.actions')
+    capabilities = {}
+    for spec in cap_files.iterdir():
+        path = cap_files.joinpath(spec.name)
+        with open(path, 'r') as yaml_file:
+            doc = yaml.safe_load(yaml_file).get('Specification')
+
+        title = doc.get('Title')
+        actions = doc.get('Actions')
+        descriptions = []
+        for action in actions:
+            action_number = action.get('Number')
+            if not action_number:
+                continue
+
+            action_number = str(action_number)
+            file = '0'*(3-len(action_number)) + action_number
+            with open(action_files.joinpath(f'{file}.yaml'), 'r') as yaml_file:
+                description = yaml.safe_load(
+                    yaml_file
+                ).get('Specification').get('Description')
+
+            descriptions.append(description)
+
+        capabilities[title] = '<br>'.join(descriptions)
+
+    output = template.render(capabilities=capabilities)
+    with open('framework_test.md', 'w') as outfile:
+        outfile.write(output)
 
 @cli.group()
 def specifications():

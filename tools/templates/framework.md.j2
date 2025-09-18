@@ -1,0 +1,7 @@
+# FinOps Capabilities -> Clear, Actionable Steps
+
+| **Capability** | **Clear, Actionable Steps** |
+|---|---|
+{% for capability, actions in capabilities.items() -%}
+| **{{ capability }}** | {{ actions }} |
+{% endfor %}
