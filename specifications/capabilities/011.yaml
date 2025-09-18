@@ -13,5 +13,15 @@ Specification:
   Title: FinOps Practice Operations
   Description: null
   Actions:
-  - Number: 0
+  - Number: 91
+    Overrides: null
+  - Number: 92
+    Overrides: null
+  - Number: 93
+    Overrides: null
+  - Number: 94
+    Overrides: null
+  - Number: 95
+    Overrides: null
+  - Number: 96
     Overrides: null

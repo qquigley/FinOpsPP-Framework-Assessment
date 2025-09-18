@@ -64,7 +64,7 @@ def specifications():
 )
 @click.option(
     '--value',
-    help='Optional value to use with key. Defaults to None'
+    help='Optional value to use with key. Defaults to null'
 )
 @click.option(
     '--start',
@@ -116,35 +116,62 @@ def update(after, key, specification_type, value, start):
     '--profile',
     default='FinOps++',
     type=click.Choice(list(profiles().keys())),
-    help='Which assessment profile to use. Defaults to "FinOps++"',
+    help='Which assessment profile to use. Defaults to "FinOps++"'
 )
 def list_specs(profile):
-    """List all Specifications by fully qualified ID per profile"""
+    """List all Specifications by fully qualified ID per profile
+    
+    Fully qualified ID is of the format Domain.Capability-Action"""
     with open(PROFILES_MAP[profile], 'r') as yaml_file:
-        domains = yaml.safe_load(
+        spec = yaml.safe_load(
             yaml_file
-        ).get('Specification').get('Domains')
+        ).get('Specification')
+        domains = spec.get('Domains')
+        profile_id = spec.get('ID')
 
     domain_files = files('finopspp.specifications.domains')
+    cap_files = files('finopspp.specifications.capabilities')
+    click.echo(f'Fully qualified IDs for {profile}. Profile ID: {profile_id}')
     for domain in domains:
-        number = domain.get('Number')
-        if not number:
+        domain_number = domain.get('Number')
+        if not domain_number:
             continue
 
-        number = str(number)
-        file = '0'*(3-len(number)) + number
-        click.echo(domain_files.joinpath(f'{file}.yaml'))
+        domain_number = str(domain_number)
+        file = '0'*(3-len(domain_number)) + domain_number
+        with open(domain_files.joinpath(f'{file}.yaml'), 'r') as yaml_file:
+            capabilities = yaml.safe_load(
+                yaml_file
+            ).get('Specification').get('Capabilities')
+
+        for capability in capabilities:
+            capability_number = capability.get('Number')
+            if not capability_number:
+                continue
+
+            capability_number = str(capability_number)
+            file = '0'*(3-len(capability_number)) + capability_number
+            with open(cap_files.joinpath(f'{file}.yaml'), 'r') as yaml_file:
+                actions = yaml.safe_load(
+                    yaml_file
+                ).get('Specification').get('Actions')
+
+            for action in actions:
+                action_number = action.get('Number')
+                unique_id = f'{domain_number}.{capability_number}-{action_number}'
+                click.echo(unique_id)
 
 @specifications.command()
 @click.option(
     '--metadata',
     is_flag=True,
-    help='Show the Metadata for a Specifications',
+    help='Show the Metadata for a Specifications'
 )
 @click.option(
     '--specification-type',
     type=click.Choice(['profiles', 'domains', 'capabilities', 'actions']),
-    help='Which specification type to show. Defaults to "profiles"',
+    default='profiles',
+    help='Which specification type to show. Defaults to "profiles"'
 )
 @click.argument('id')
 def show(id, metadata, specification_type):
@@ -153,9 +180,10 @@ def show(id, metadata, specification_type):
     if metadata:
         data_type = 'Metadata'
 
+    file = '0'*(3-len(id)) + id
     specification_file = files(
         f'finopspp.specifications.{specification_type}'
-    ).joinpath(f'{id}.yaml')
+    ).joinpath(f'{file}.yaml')
 
     with open(specification_file, 'r') as file:
         specification_data = yaml.safe_load(file)

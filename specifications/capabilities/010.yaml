@@ -13,5 +13,13 @@ Specification:
   Title: FinOps Education & Enablement
   Description: null
   Actions:
-  - Number: 0
+  - Number: 97
+    Overrides: null
+  - Number: 98
+    Overrides: null
+  - Number: 99
+    Overrides: null
+  - Number: 100
+    Overrides: null
+  - Number: 101
     Overrides: null

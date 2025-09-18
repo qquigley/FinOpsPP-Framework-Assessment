@@ -13,5 +13,15 @@ Specification:
   Title: Rate Optimization
   Description: null
   Actions:
-  - Number: 0
+  - Number: 79
+    Overrides: null
+  - Number: 80
+    Overrides: null
+  - Number: 81
+    Overrides: null
+  - Number: 82
+    Overrides: null
+  - Number: 83
+    Overrides: null
+  - Number: 84
     Overrides: null

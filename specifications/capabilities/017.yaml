@@ -13,5 +13,15 @@ Specification:
   Title: Onboarding Workloads
   Description: null
   Actions:
-  - Number: 0
+  - Number: 118
+    Overrides: null
+  - Number: 119
+    Overrides: null
+  - Number: 120
+    Overrides: null
+  - Number: 121
+    Overrides: null
+  - Number: 122
+    Overrides: null
+  - Number: 123
     Overrides: null

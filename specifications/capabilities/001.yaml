@@ -13,5 +13,17 @@ Specification:
   Title: Allocation
   Description: null
   Actions:
-  - Number: 0
+  - Number: 9
+    Overrides: null
+  - Number: 10
+    Overrides: null
+  - Number: 11
+    Overrides: null
+  - Number: 12
+    Overrides: null
+  - Number: 13
+    Overrides: null
+  - Number: 14
+    Overrides: null
+  - Number: 15
     Overrides: null
