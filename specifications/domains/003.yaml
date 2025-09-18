@@ -1,25 +1,25 @@
 Metadata:
   Proposed: 2025-09-16
-  Adoption: Null
-  Modified: Null
+  Adoption: null
+  Modified: null
   Version: 0.0.1
   Status: Proposed
   Approvers:
-  - Name: Null
-    Email: Null
-    Date: Null
+  - Name: null
+    Email: null
+    Date: null
 Specification:
-  ID: 004
+  ID: 4
   Title: Quantify Business Value
+  Description: null
   Capabilities:
-  - Number: 004
-    Overrides: Null
-  - Number: 005
-    Overrides: Null
-  - Number: 013
-    Overrides: Null
-  - Number: 018
-    Overrides: Null
-  - Number: 021
-    Overrides: Null
-  
+  - Number: 4
+    Overrides: null
+  - Number: 5
+    Overrides: null
+  - Number: 13
+    Overrides: null
+  - Number: 18
+    Overrides: null
+  - Number: 21
+    Overrides: null

@@ -58,22 +58,82 @@ def specifications():
 
 @specifications.command()
 @click.option(
+    '--specification-type',
+    type=click.Choice(['profiles', 'domains', 'capabilities', 'actions']),
+    help='Which specification type to show. Defaults to "profiles"'
+)
+@click.option(
+    '--value',
+    help='Optional value to use with key. Defaults to None'
+)
+@click.option(
+    '--start',
+    default=1,
+    type=click.INT,
+    help='Specification ID to start on. Default is 1'
+)
+@click.argument('after')
+@click.argument('key')
+def update(after, key, specification_type, value, start):
+    """Mass update the Specification format per type
+    
+    The AFTER argument is to be given in dot-format for the accessor path from which
+    to insert the new key-value pair. Ex "Specification.ID"
+    """
+    specs = files(f'finopspp.specifications.{specification_type}')
+    for spec in specs.iterdir():
+        number, _ = os.path.splitext(spec.name)
+        if int(number) < start:
+            continue
+
+        path = specs.joinpath(spec.name)
+        with open(path, 'r') as yaml_file:
+            base_doc = yaml.safe_load(yaml_file)
+
+        doc = base_doc
+        accessors = after.split('.')
+        target = accessors.pop()
+        for accessor in accessors:
+            doc = doc.get(accessor)
+
+        position = list(doc.keys()).index(target)
+        items = list(doc.items())
+        items.insert(position + 1, (key, value))
+        doc.clear()
+        doc.update(dict(items))
+        
+        with open(path, 'w') as yaml_file:
+            yaml.dump(
+                base_doc,
+                yaml_file,
+                default_flow_style=False,
+                sort_keys=False,
+                indent=2
+            )
+
+@specifications.command(name='list')
+@click.option(
     '--profile',
     default='FinOps++',
     type=click.Choice(list(profiles().keys())),
     help='Which assessment profile to use. Defaults to "FinOps++"',
 )
-def list(profile):
+def list_specs(profile):
     """List all Specifications by fully qualified ID per profile"""
     with open(PROFILES_MAP[profile], 'r') as yaml_file:
-        domains = yaml.load(
-            yaml_file, Loader=yaml.BaseLoader
+        domains = yaml.safe_load(
+            yaml_file
         ).get('Specification').get('Domains')
 
     domain_files = files('finopspp.specifications.domains')
     for domain in domains:
         number = domain.get('Number')
-        click.echo(domain_files.joinpath(f'{number}.yaml'))
+        if not number:
+            continue
+
+        number = str(number)
+        file = '0'*(3-len(number)) + number
+        click.echo(domain_files.joinpath(f'{file}.yaml'))
 
 @specifications.command()
 @click.option(

@@ -1,21 +1,23 @@
 Metadata:
   Proposed: 2025-09-16
-  Adoption: Null
-  Modified: Null
+  Adoption: null
+  Modified: null
   Version: 0.0.1
   Status: Proposed
   Approvers:
-  - Name: Null
-    Email: Null
-    Date: Null
+  - Name: null
+    Email: null
+    Date: null
 Specification:
-  ID: 062
-  Description: Estimate cost/performance/resiliency/security trade‑offs; document cases.
+  ID: 62
+  Title: null
+  Description: Estimate cost/performance/resiliency/security trade-offs; document
+    cases.
   Implementation Types:
-  - Null
+  - null
   References:
-  - Name: Null
-    Link: Null
-    Comment: Null
+  - Name: null
+    Link: null
+    Comment: null
   Notes:
-  - Null
+  - null

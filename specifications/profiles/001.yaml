@@ -1,22 +1,23 @@
 Metadata:
   Proposed: 2025-09-16
-  Adoption: Null
-  Modified: Null
+  Adoption: null
+  Modified: null
   Version: 0.0.1
   Status: Proposed
   Approvers:
-  - Name: Null
-    Email: Null
-    Date: Null
+  - Name: null
+    Email: null
+    Date: null
 Specification:
-  ID: 001
+  ID: 1
   Title: FinOps Foundation
+  Description: null
   Domains:
-  - Number: 001
-    Overrides: Null
-  - Number: 002
-    Overrides: Null
-  - Number: 003
-    Overrides: Null
-  - Number: 004
-    Overrides: Null
+  - Number: 1
+    Overrides: null
+  - Number: 2
+    Overrides: null
+  - Number: 3
+    Overrides: null
+  - Number: 4
+    Overrides: null
