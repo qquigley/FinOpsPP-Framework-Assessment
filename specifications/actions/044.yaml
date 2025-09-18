@@ -11,7 +11,7 @@ Metadata:
 Specification:
   ID: 44
   Title: null
-  Description: Increase allocation coverage of shared costs; automate where possible.
+  Description: Integrate rolling forecasts to adjust budgets as drivers change.
   Implementation Types:
   - null
   References:

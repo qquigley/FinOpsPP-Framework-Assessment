@@ -11,7 +11,7 @@ Metadata:
 Specification:
   ID: 14
   Title: null
-  Description: Iterate strategies and communicate changes broadly.
+  Description: Automate parsing/enforcement (policies, CI/CD checks, tag bots).
   Implementation Types:
   - null
   References:

@@ -11,7 +11,7 @@ Metadata:
 Specification:
   ID: 74
   Title: null
-  Description: Integrate billing + entitlement data with Procurement/ITAM/SAM.
+  Description: Document licensing models and constraints; tag for allocation/chargeback.
   Implementation Types:
   - null
   References:

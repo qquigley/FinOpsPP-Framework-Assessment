@@ -11,7 +11,7 @@ Metadata:
 Specification:
   ID: 5
   Title: null
-  Description: Implement data quality checks, SLAs, and runbooks; monitor failures.
+  Description: Document normalization/augmentation rules and owners; version them.
   Implementation Types:
   - null
   References:

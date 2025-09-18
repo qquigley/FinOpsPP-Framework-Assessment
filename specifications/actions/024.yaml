@@ -11,7 +11,7 @@ Metadata:
 Specification:
   ID: 24
   Title: null
-  Description: Automate alert routing to owners via existing channels (email/Slack/Teams).
+  Description: Define severity tiers, thresholds, and response SLAs; publish runbooks.
   Implementation Types:
   - null
   References:

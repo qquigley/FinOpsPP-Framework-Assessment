@@ -11,8 +11,8 @@ Metadata:
 Specification:
   ID: 62
   Title: null
-  Description: Estimate cost/performance/resiliency/security trade-offs; document
-    cases.
+  Description: Assess workloads for modernization (managed services, serverless, data
+    tiers).
   Implementation Types:
   - null
   References:

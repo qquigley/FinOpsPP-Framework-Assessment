@@ -11,7 +11,7 @@ Metadata:
 Specification:
   ID: 34
   Title: null
-  Description: Report estimate accuracy; enforce variance thresholds by maturity.
+  Description: Establish decision process for which scenarios feed the forecast.
   Implementation Types:
   - null
   References:

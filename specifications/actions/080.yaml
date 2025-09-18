@@ -11,7 +11,7 @@ Metadata:
 Specification:
   ID: 80
   Title: null
-  Description: Purchase commitments frequently; target healthy utilization.
+  Description: Build repeatable analysis for coverage, utilization, and breakeven.
   Implementation Types:
   - null
   References:
@@ -19,4 +19,4 @@ Specification:
     Link: null
     Comment: null
   Notes:
-  - Example ~80%+
+  - null

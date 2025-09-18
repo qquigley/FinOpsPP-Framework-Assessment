@@ -11,7 +11,8 @@ Metadata:
 Specification:
   ID: 4
   Title: null
-  Description: Document normalization/augmentation rules and owners; version them.
+  Description: Define data granularity and ingestion frequency; include mandatory
+    metadata.
   Implementation Types:
   - null
   References:

@@ -11,7 +11,8 @@ Metadata:
 Specification:
   ID: 63
   Title: null
-  Description: Implement iteratively; test, measure, and capture before/after results.
+  Description: Estimate cost/performance/resiliency/security trade-offs; document
+    cases.
   Implementation Types:
   - null
   References:

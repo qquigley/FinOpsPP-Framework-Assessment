@@ -11,7 +11,7 @@ Metadata:
 Specification:
   ID: 43
   Title: null
-  Description: Integrate rolling forecasts to adjust budgets as drivers change.
+  Description: Define budgeting strategy (granularity, owners, holdbacks, thresholds).
   Implementation Types:
   - null
   References:

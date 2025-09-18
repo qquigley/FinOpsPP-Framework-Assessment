@@ -11,7 +11,7 @@ Metadata:
 Specification:
   ID: 7
   Title: null
-  Description: Continuously optimize pipelines for timeliness and cost.
+  Description: Build dashboards/alerts for ingestion anomalies; triage and resolve.
   Implementation Types:
   - null
   References:

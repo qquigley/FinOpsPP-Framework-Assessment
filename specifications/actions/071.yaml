@@ -11,7 +11,7 @@ Metadata:
 Specification:
   ID: 71
   Title: null
-  Description: Track KPI deltas (CPU/GB-hrs, idle %, savings rate); document playbooks.
+  Description: Gamify adoption (leaderboards, goals) and celebrate wins.
   Implementation Types:
   - null
   References:

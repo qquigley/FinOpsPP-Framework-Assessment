@@ -11,7 +11,7 @@ Metadata:
 Specification:
   ID: 6
   Title: null
-  Description: Build dashboards/alerts for ingestion anomalies; triage and resolve.
+  Description: Implement data quality checks, SLAs, and runbooks; monitor failures.
   Implementation Types:
   - null
   References:

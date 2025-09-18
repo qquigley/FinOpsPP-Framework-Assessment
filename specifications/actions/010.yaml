@@ -11,8 +11,7 @@ Metadata:
 Specification:
   ID: 10
   Title: null
-  Description: Publish allocation taxonomy; include overlays (project, app ID, cost
-    center).
+  Description: Identify shared costs; agree apportionment rules and document them.
   Implementation Types:
   - null
   References:

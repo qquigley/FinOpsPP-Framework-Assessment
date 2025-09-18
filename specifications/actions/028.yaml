@@ -11,7 +11,8 @@ Metadata:
 Specification:
   ID: 28
   Title: null
-  Description: Tune thresholds regularly to reduce noise, increase trust.
+  Description: Track metrics (detection/notification/resolution time, false positives,
+    avoidance).
   Implementation Types:
   - null
   References:

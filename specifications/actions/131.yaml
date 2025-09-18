@@ -9,9 +9,9 @@ Metadata:
     Email: null
     Date: null
 Specification:
-  ID: 133
+  ID: 131
   Title: null
-  Description: Provide allied teams the cloud metrics they need.
+  Description: Share reporting infrastructure and common definitions; avoid duplication.
   Implementation Types:
   - null
   References:
@@ -19,4 +19,4 @@ Specification:
     Link: null
     Comment: null
   Notes:
-  - Example is license-impacted spend
+  - null

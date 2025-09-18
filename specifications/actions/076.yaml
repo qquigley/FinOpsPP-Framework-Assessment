@@ -11,8 +11,7 @@ Metadata:
 Specification:
   ID: 76
   Title: null
-  Description: Influence workload design (IaaS vs PaaS vs SaaS) with cost/compliance
-    input.
+  Description: Validate utilization/compliance; remediate idle/over-provisioned licenses.
   Implementation Types:
   - null
   References:

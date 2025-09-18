@@ -11,7 +11,8 @@ Metadata:
 Specification:
   ID: 77
   Title: null
-  Description: Publish license/SaaS spend and utilization to stakeholders regularly.
+  Description: Influence workload design (IaaS vs PaaS vs SaaS) with cost/compliance
+    input.
   Implementation Types:
   - null
   References:

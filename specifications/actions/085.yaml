@@ -11,7 +11,7 @@ Metadata:
 Specification:
   ID: 85
   Title: null
-  Description: Define sustainability metrics/targets.
+  Description: Aggregate emissions data by region/service/account with lineage.
   Implementation Types:
   - null
   References:
@@ -19,4 +19,4 @@ Specification:
     Link: null
     Comment: null
   Notes:
-  - "Example kgCO\xE2\u201A\u201Ae per unit"
+  - null

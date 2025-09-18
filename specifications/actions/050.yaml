@@ -11,7 +11,7 @@ Metadata:
 Specification:
   ID: 50
   Title: null
-  Description: Choose internal vs external benchmarks; align apples-to-apples units.
+  Description: Validate tagging/allocation health to ensure comparable data.
   Implementation Types:
   - null
   References:

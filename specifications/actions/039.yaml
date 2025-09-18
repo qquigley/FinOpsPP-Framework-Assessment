@@ -11,7 +11,7 @@ Metadata:
 Specification:
   ID: 39
   Title: null
-  Description: Compare forecast vs actual; produce variance narratives and actions.
+  Description: Run rolling forecasts; refresh weekly/biweekly for accuracy.
   Implementation Types:
   - null
   References:

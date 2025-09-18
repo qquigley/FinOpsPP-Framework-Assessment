@@ -11,7 +11,7 @@ Metadata:
 Specification:
   ID: 21
   Title: null
-  Description: Iterate based on feedback and outcome metrics, not just views.
+  Description: Track adoption/usage; run A/B revisions; manage changes via staging.
   Implementation Types:
   - null
   References:

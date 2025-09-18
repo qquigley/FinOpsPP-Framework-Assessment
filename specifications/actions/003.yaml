@@ -11,8 +11,7 @@ Metadata:
 Specification:
   ID: 3
   Title: null
-  Description: Define data granularity and ingestion frequency; include mandatory
-    metadata.
+  Description: Create landing zones with access controls, retention, and permissions.
   Implementation Types:
   - null
   References:

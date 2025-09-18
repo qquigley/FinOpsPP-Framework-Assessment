@@ -11,8 +11,7 @@ Metadata:
 Specification:
   ID: 27
   Title: null
-  Description: Track metrics (detection/notification/resolution time, false positives,
-    avoidance).
+  Description: Analyze root causes; fix tags, allocation rules, or usage issues.
   Implementation Types:
   - null
   References:

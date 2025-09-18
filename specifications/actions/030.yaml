@@ -11,8 +11,7 @@ Metadata:
 Specification:
   ID: 30
   Title: null
-  Description: Agree pricing assumptions (on-demand vs commitments), shared/platform
-    costs.
+  Description: Define estimating scope, inputs, assumptions, and policy constraints.
   Implementation Types:
   - null
   References:

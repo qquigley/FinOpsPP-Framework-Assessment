@@ -11,7 +11,7 @@ Metadata:
 Specification:
   ID: 29
   Title: null
-  Description: Define estimating scope, inputs, assumptions, and policy constraints.
+  Description: Tune thresholds regularly to reduce noise, increase trust.
   Implementation Types:
   - null
   References:

@@ -11,7 +11,7 @@ Metadata:
 Specification:
   ID: 46
   Title: null
-  Description: Automate threshold alerts; surface in the tools budget owners use.
+  Description: Publish "budget vs actual vs forecast" by business dimensions.
   Implementation Types:
   - null
   References:

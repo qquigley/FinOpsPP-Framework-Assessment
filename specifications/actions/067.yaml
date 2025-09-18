@@ -11,7 +11,7 @@ Metadata:
 Specification:
   ID: 67
   Title: null
-  Description: Inventory workloads; classify variable vs consistent.
+  Description: Define strategy (value vs risk thresholds, target utilization/efficiency).
   Implementation Types:
   - null
   References:
@@ -19,4 +19,4 @@ Specification:
     Link: null
     Comment: null
   Notes:
-  - Can be turn off
+  - null

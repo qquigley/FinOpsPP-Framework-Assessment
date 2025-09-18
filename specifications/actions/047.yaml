@@ -11,8 +11,7 @@ Metadata:
 Specification:
   ID: 47
   Title: null
-  Description: Review/adapt strategy when KPIs stagnate or org factors change (M&A,
-    regs).
+  Description: Automate threshold alerts; surface in the tools budget owners use.
   Implementation Types:
   - null
   References:

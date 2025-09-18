@@ -11,7 +11,8 @@ Metadata:
 Specification:
   ID: 11
   Title: null
-  Description: Implement tagging/labeling standards; educate and enforce.
+  Description: Publish allocation taxonomy; include overlays (project, app ID, cost
+    center).
   Implementation Types:
   - null
   References:

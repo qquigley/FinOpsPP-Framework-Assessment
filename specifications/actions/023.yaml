@@ -11,7 +11,8 @@ Metadata:
 Specification:
   ID: 23
   Title: null
-  Description: Define severity tiers, thresholds, and response SLAs; publish runbooks.
+  Description: Configure detection for total cost spikes, cost/usage rate shifts,
+    unit drops.
   Implementation Types:
   - null
   References:

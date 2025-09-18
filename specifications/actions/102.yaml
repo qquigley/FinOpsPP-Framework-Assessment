@@ -11,7 +11,8 @@ Metadata:
 Specification:
   ID: 102
   Title: null
-  Description: Publish guidelines, guardrails, and automation controls.
+  Description: Draft clear, goal-aligned cloud financial policies (what "good" looks
+    like).
   Implementation Types:
   - null
   References:
@@ -19,4 +20,4 @@ Specification:
     Link: null
     Comment: null
   Notes:
-  - Example is policies as code
+  - null

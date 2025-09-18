@@ -11,7 +11,7 @@ Metadata:
 Specification:
   ID: 75
   Title: null
-  Description: Validate utilization/compliance; remediate idle/over-provisioned licenses.
+  Description: Integrate billing + entitlement data with Procurement/ITAM/SAM.
   Implementation Types:
   - null
   References:

@@ -11,7 +11,7 @@ Metadata:
 Specification:
   ID: 26
   Title: null
-  Description: Analyze root causes; fix tags, allocation rules, or usage issues.
+  Description: Record each anomaly with context, scope, impact, and timeline.
   Implementation Types:
   - null
   References:

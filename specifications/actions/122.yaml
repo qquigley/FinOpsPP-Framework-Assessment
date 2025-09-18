@@ -11,7 +11,7 @@ Metadata:
 Specification:
   ID: 122
   Title: null
-  Description: Review post-onboard outcomes vs estimates and KPIs; adjust patterns.
+  Description: Start with lower envs; have a rollback plan before production cutover.
   Implementation Types:
   - null
   References:

@@ -11,7 +11,7 @@ Metadata:
 Specification:
   ID: 38
   Title: null
-  Description: Run rolling forecasts; refresh weekly/biweekly for accuracy.
+  Description: Collect business drivers (launches, promos, growth) on a set schedule.
   Implementation Types:
   - null
   References:

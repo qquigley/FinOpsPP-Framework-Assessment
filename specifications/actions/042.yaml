@@ -11,7 +11,7 @@ Metadata:
 Specification:
   ID: 42
   Title: null
-  Description: Define budgeting strategy (granularity, owners, holdbacks, thresholds).
+  Description: Feed learnings into budgeting, commitments, and optimization backlogs.
   Implementation Types:
   - null
   References:

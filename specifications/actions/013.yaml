@@ -11,7 +11,7 @@ Metadata:
 Specification:
   ID: 13
   Title: null
-  Description: Automate parsing/enforcement (policies, CI/CD checks, tag bots).
+  Description: Validate allocation compliance; report gaps and financial impact.
   Implementation Types:
   - null
   References:

@@ -1,4 +1,4 @@
-Metadata:
+0Metadata:
   Proposed: 2025-09-16
   Adoption: null
   Modified: null
@@ -11,8 +11,7 @@ Metadata:
 Specification:
   ID: 36
   Title: null
-  Description: Establish "why," approach (simple/trend/driver-based), cadence, and
-    horizon.
+  Description: Coach engineering to own estimates; compare isolated components first.
   Implementation Types:
   - null
   References:

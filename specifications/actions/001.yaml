@@ -9,7 +9,7 @@ Metadata:
     Email: null
     Date: null
 Specification:
-  ID: 1
+  ID: 2
   Title: null
   Description: Inventory all data sources (CSP cost/usage, performance, on-prem, internal).
   Implementation Types:
@@ -19,4 +19,4 @@ Specification:
     Link: null
     Comment: null
   Notes:
-  - Choose tooling to land/validate datasets (e.g., CUR, exports, telemetry)
+  - null
