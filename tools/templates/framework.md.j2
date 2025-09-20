@@ -1,7 +1,39 @@
-# FinOps Capabilities -> Clear, Actionable Steps
+# FinOps Maturity Assessment Framework
 
-| **Capability** | **Clear, Actionable Steps** |
-|---|---|
-{% for capability, actions in capabilities.items() -%}
-| **{{ capability }}** | {{ actions }} |
-{% endfor %}
+
+<table>
+    <tr>
+        <th>Domain</th>
+        <th>Capability</th>
+        <th>Action</th>
+    </tr>
+{%- for domain in domains %}
+    <tr>
+        <td>
+        {{ domain.name }}
+        </td>
+        <td>
+        <table>
+        {%- for capability in domain.capabilities %}
+            <tr>
+                <td>
+                {{ capability.name }}
+                </td>
+                <td>
+                <table>
+                {%- for action in capability.actions %}
+                    <tr>
+                        <td>
+                        {{ action }}
+                        </td>
+                    </tr>
+                {%- endfor %}
+                </table>
+                </td>
+            </tr>
+        {%- endfor %}
+        </table>
+        </td>
+    </tr>
+{%- endfor %}
+</table>

@@ -9,7 +9,7 @@
         <td>
         Data Ingestion
         </td>
-    <tr>
+        <tr>
         <td>
         Allocation
         </td>

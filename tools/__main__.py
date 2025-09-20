@@ -64,34 +64,50 @@ def markdown(profile, markdown_type):
     env = Environment(loader=PackageLoader('finopspp', 'templates'))
     template = env.get_template(f'{markdown_type}.md.j2')
 
+    domain_files = files('finopspp.specifications.domains')
     cap_files = files('finopspp.specifications.capabilities')
     action_files = files('finopspp.specifications.actions')
-    capabilities = {}
-    for spec in cap_files.iterdir():
-        path = cap_files.joinpath(spec.name)
-        with open(path, 'r') as yaml_file:
+    domains = []
+    for spec in domain_files.iterdir():
+        with open(domain_files.joinpath(spec.name), 'r') as yaml_file:
             doc = yaml.safe_load(yaml_file).get('Specification')
 
-        title = doc.get('Title')
-        actions = doc.get('Actions')
-        descriptions = []
-        for action in actions:
-            action_id = action.get('ID')
-            if not action_id:
+        capabilities = []
+        domains.append({
+            'name': doc.get('Title'),
+            'capabilities': capabilities
+        })
+        for capability in doc.get('Capabilities'):
+            cap_id = capability.get('ID')
+            if not cap_id:
                 continue
 
-            action_id = str(action_id)
-            file = '0'*(3-len(action_id)) + action_id
-            with open(action_files.joinpath(f'{file}.yaml'), 'r') as yaml_file:
-                description = yaml.safe_load(
-                    yaml_file
-                ).get('Specification').get('Description')
+            cap_id = str(cap_id)
+            file = '0'*(3-len(cap_id)) + cap_id
+            with open(cap_files.joinpath(f'{file}.yaml'), 'r') as yaml_file:
+                doc = yaml.safe_load(yaml_file).get('Specification')
 
-            descriptions.append(description)
+            actions = []
+            capabilities.append({
+                'name': doc.get('Title'),
+                'actions': actions
+            })
+            for action in doc.get('Actions'):
+                action_id = action.get('ID')
+                if not action_id:
+                    continue
 
-        capabilities[title] = '<br>'.join(descriptions)
+                action_id = str(action_id)
+                file = '0'*(3-len(action_id)) + action_id
+                with open(action_files.joinpath(f'{file}.yaml'), 'r') as yaml_file:
+                    description = yaml.safe_load(
+                        yaml_file
+                    ).get('Specification').get('Description')
 
-    output = template.render(capabilities=capabilities)
+                actions.append(description)
+
+    click.echo(domains)
+    output = template.render(domains=domains)
     with open(f'{profile} (test).md', 'w') as outfile:
         outfile.write(output)
 
