@@ -67,9 +67,20 @@ def markdown(profile, markdown_type):
     domain_files = files('finopspp.specifications.domains')
     cap_files = files('finopspp.specifications.capabilities')
     action_files = files('finopspp.specifications.actions')
+    with open(PROFILES_MAP[profile], 'r') as yaml_file:
+        doc = yaml.safe_load(
+            yaml_file
+        ).get('Specification')
+
     domains = []
-    for spec in domain_files.iterdir():
-        with open(domain_files.joinpath(spec.name), 'r') as yaml_file:
+    for domain in doc.get('Domains'):
+        domain_id = domain.get('ID')
+        if not domain_id:
+            continue
+
+        domain_id = str(domain_id)
+        file = '0'*(3-len(domain_id)) + domain_id
+        with open(domain_files.joinpath(f'{file}.yaml'), 'r') as yaml_file:
             doc = yaml.safe_load(yaml_file).get('Specification')
 
         capabilities = []
@@ -107,7 +118,13 @@ def markdown(profile, markdown_type):
                 actions.append(description)
 
     output = template.render(profile=profile, domains=domains)
-    with open(f'{profile} (test).md', 'w') as outfile:
+    outpath = os.path.join(
+        os.getcwd(),
+        'assessments',
+        'frameworks',
+        f'{profile} (test).md'
+    )
+    with open(outpath, 'w') as outfile:
         outfile.write(output)
 
 @cli.group()

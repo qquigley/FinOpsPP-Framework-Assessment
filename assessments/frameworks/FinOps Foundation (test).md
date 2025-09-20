@@ -1,4 +1,4 @@
-# FinOps++ Maturity Assessment Framework
+# FinOps Foundation Maturity Assessment Framework
 
 <table>
     <tr>
