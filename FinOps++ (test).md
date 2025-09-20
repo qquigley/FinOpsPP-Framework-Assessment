@@ -6,8 +6,8 @@
         <th>Capability &rarr; Clear, Actionable Steps</th>
     </tr>
     <tr>
-        <td>
-        Manage the FinOps Practice
+        <td rowspan="4">
+        <b>Manage the FinOps Practice</b>
         </td>
         <td>
         <table>
@@ -307,8 +307,8 @@
         </td>
     </tr>
     <tr>
-        <td>
-        Optimize Usage & Cost
+        <td rowspan="4">
+        <b>Optimize Usage & Cost</b>
         </td>
         <td>
         <table>
@@ -511,8 +511,8 @@
         </td>
     </tr>
     <tr>
-        <td>
-        Quantify Business Value
+        <td rowspan="4">
+        <b>Quantify Business Value</b>
         </td>
         <td>
         <table>
@@ -720,8 +720,8 @@
         </td>
     </tr>
     <tr>
-        <td>
-        Understand Usage & Cost
+        <td rowspan="4">
+        <b>Understand Usage & Cost</b>
         </td>
         <td>
         <table>
