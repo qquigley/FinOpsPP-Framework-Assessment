@@ -1,11 +1,9 @@
-# FinOps Maturity Assessment Framework
-
+# FinOps++ Maturity Assessment Framework
 
 <table>
     <tr>
         <th>Domain</th>
-        <th>Capability</th>
-        <th>Action</th>
+        <th>Capability &rarr; Clear, Actionable Steps</th>
     </tr>
     <tr>
         <td>

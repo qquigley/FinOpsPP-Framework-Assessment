@@ -106,8 +106,7 @@ def markdown(profile, markdown_type):
 
                 actions.append(description)
 
-    click.echo(domains)
-    output = template.render(domains=domains)
+    output = template.render(profile=profile, domains=domains)
     with open(f'{profile} (test).md', 'w') as outfile:
         outfile.write(output)
 
