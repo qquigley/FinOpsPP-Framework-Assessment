@@ -7,7 +7,7 @@
     </tr>
     <tr>
         <td>
-        Manage the FinOps Practice
+        <b>Manage the FinOps Practice</b>
         </td>
         <td>
         <table>
@@ -308,7 +308,7 @@
     </tr>
     <tr>
         <td>
-        Optimize Usage & Cost
+        <b>Optimize Usage & Cost</b>
         </td>
         <td>
         <table>
@@ -512,7 +512,7 @@
     </tr>
     <tr>
         <td>
-        Quantify Business Value
+        <b>Quantify Business Value</b>
         </td>
         <td>
         <table>
@@ -721,7 +721,7 @@
     </tr>
     <tr>
         <td>
-        Understand Usage & Cost
+        <b>Understand Usage & Cost</b>
         </td>
         <td>
         <table>
