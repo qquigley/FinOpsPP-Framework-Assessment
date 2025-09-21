@@ -86,24 +86,42 @@ def framework(profile):
         capabilities = []
 
         doc = sub_specification_helper(domain, domain_files)
+
+        title = doc.get('Title')
+        doc_id = doc.get('ID')
+        if doc_id:
+            doc_id = str(doc.get('ID'))
+            file = '0'*(3-len(doc_id)) + doc_id
+            title = f'<a href="/assessments/domains/{file}.md">{file}</a>: {title}'
+
         domains.append({
-            'name': doc.get('Title'),
+            'name': title,
             'capabilities': capabilities
         })
         for capability in doc.get('Capabilities'):
             actions = []
 
             doc = sub_specification_helper(capability, cap_files)
+
+            title = doc.get('Title')
+            doc_id = doc.get('ID')
+            if doc_id:
+                doc_id = str(doc.get('ID'))
+                file = '0'*(3-len(doc_id)) + doc_id
+                title = f'<a href="/assessments/capabilities/{file}.md">{file}</a>: {title}'
+
             capabilities.append({
-                'name': doc.get('Title'),
+                'name': title,
                 'actions': actions
             })
             for action in doc.get('Actions'):
                 doc = sub_specification_helper(action, action_files)
+
                 doc_id = str(doc.get('ID'))
                 description = doc.get('Description')
                 file = '0'*(3-len(doc_id)) + doc_id
                 action = f'<a href="/assessments/actions/{file}.md">{file}</a>: {description}'
+
                 actions.append(action)
 
     output = template.render(profile=profile, domains=domains)
@@ -111,7 +129,7 @@ def framework(profile):
         os.getcwd(),
         'assessments',
         'frameworks',
-        f'{profile} (test).md'
+        f'{profile}.md'
     )
     with open(outpath, 'w') as outfile:
         outfile.write(output)
