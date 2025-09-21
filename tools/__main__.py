@@ -100,7 +100,11 @@ def framework(profile):
             })
             for action in doc.get('Actions'):
                 doc = sub_specification_helper(action, action_files)
-                actions.append(doc.get('Description'))
+                doc_id = str(doc.get('ID'))
+                description = doc.get('Description')
+                file = '0'*(3-len(doc_id)) + doc_id
+                action = f'[{file}](/assessments/actions/{file}.md): {description}'
+                actions.append(action)
 
     output = template.render(profile=profile, domains=domains)
     outpath = os.path.join(
