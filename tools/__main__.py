@@ -47,6 +47,20 @@ def assessment(profile, name):
     """Generate a FinOps++ Assessment from the specifications for a given profile"""
     click.echo(f'Creating "{name}.xlsx" assessment for {profile} profile')
 
+
+def sub_specification_helper(doc, spec_file):
+    """Helps find and pull Specification subsection from a specification"""
+    id_ = doc.get('ID')
+    # if no ID, assume the full sub-specification is given and return
+    if not id_:
+        return doc
+
+    # else look up sub-specification file ID
+    id_ = str(id_)
+    file = '0'*(3-len(id_)) + id_
+    with open(spec_file.joinpath(f'{file}.yaml'), 'r') as yaml_file:
+        return yaml.safe_load(yaml_file).get('Specification')
+
 @generate.command()
 @click.option(
     '--profile',
@@ -74,48 +88,24 @@ def markdown(profile, markdown_type):
 
     domains = []
     for domain in doc.get('Domains'):
-        domain_id = domain.get('ID')
-        if not domain_id:
-            continue
-
-        domain_id = str(domain_id)
-        file = '0'*(3-len(domain_id)) + domain_id
-        with open(domain_files.joinpath(f'{file}.yaml'), 'r') as yaml_file:
-            doc = yaml.safe_load(yaml_file).get('Specification')
-
         capabilities = []
+
+        doc = sub_specification_helper(domain, domain_files)
         domains.append({
             'name': doc.get('Title'),
             'capabilities': capabilities
         })
         for capability in doc.get('Capabilities'):
-            cap_id = capability.get('ID')
-            if not cap_id:
-                continue
-
-            cap_id = str(cap_id)
-            file = '0'*(3-len(cap_id)) + cap_id
-            with open(cap_files.joinpath(f'{file}.yaml'), 'r') as yaml_file:
-                doc = yaml.safe_load(yaml_file).get('Specification')
-
             actions = []
+
+            doc = sub_specification_helper(capability, cap_files)
             capabilities.append({
                 'name': doc.get('Title'),
                 'actions': actions
             })
             for action in doc.get('Actions'):
-                action_id = action.get('ID')
-                if not action_id:
-                    continue
-
-                action_id = str(action_id)
-                file = '0'*(3-len(action_id)) + action_id
-                with open(action_files.joinpath(f'{file}.yaml'), 'r') as yaml_file:
-                    description = yaml.safe_load(
-                        yaml_file
-                    ).get('Specification').get('Description')
-
-                actions.append(description)
+                doc = sub_specification_helper(action, action_files)
+                actions.append(doc.get('Description'))
 
     output = template.render(profile=profile, domains=domains)
     outpath = os.path.join(
