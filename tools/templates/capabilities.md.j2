@@ -1,0 +1,16 @@
+# {{ spec.ID }}: {{ spec.Title | title }}
+
+## Descriptive Statement
+
+{{ spec.Description }}
+
+## Actions
+
+{% for action in spec.Actions -%}
+- [{{ action.ID }}](/assessments/actions/{{ '0'*(3-action.ID|string|length) + action.ID|string }}.md)
+{% endfor %}
+{% if spec.Overrides %}## Overrides
+
+{% for override in spec.Overrides -%}
+- {{ override }}
+{%- endfor %}{% endif %}
