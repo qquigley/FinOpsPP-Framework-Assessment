@@ -103,7 +103,7 @@ def framework(profile):
                 doc_id = str(doc.get('ID'))
                 description = doc.get('Description')
                 file = '0'*(3-len(doc_id)) + doc_id
-                action = f'[{file}](/assessments/actions/{file}.md): {description}'
+                action = f'<a href="/assessments/actions/{file}.md">{file}</a>: {description}'
                 actions.append(action)
 
     output = template.render(profile=profile, domains=domains)
