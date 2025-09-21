@@ -68,15 +68,10 @@ def sub_specification_helper(doc, spec_file):
     type=click.Choice(list(profiles().keys())),
     help='Which assessment profile to generate. Defaults to "FinOps++"',
 )
-@click.option(
-    '--markdown-type',
-    default='framework',
-    help='Which markdown to generate',
-)
-def markdown(profile, markdown_type):
-    """Generate Markdown files from the specifications"""
+def framework(profile):
+    """Generate Framework markdown files from their specifications"""
     env = Environment(loader=PackageLoader('finopspp', 'templates'))
-    template = env.get_template(f'{markdown_type}.md.j2')
+    template = env.get_template('framework.md.j2')
 
     domain_files = files('finopspp.specifications.domains')
     cap_files = files('finopspp.specifications.capabilities')
@@ -117,6 +112,35 @@ def markdown(profile, markdown_type):
     with open(outpath, 'w') as outfile:
         outfile.write(output)
 
+@generate.command()
+@click.option(
+    '--specification-type',
+    type=click.Choice(['profiles', 'domains', 'capabilities', 'actions']),
+    help='Which specification type to show. Defaults to "profiles"'
+)
+def specifications(specification_type):
+    """Generate Framework markdown files from their specifications"""
+    env = Environment(loader=PackageLoader('finopspp', 'templates'))
+    template = env.get_template(f'{specification_type}.md.j2')
+    spec_files = files(f'finopspp.specifications.{specification_type}')
+    for spec in spec_files.iterdir():
+        path = spec_files.joinpath(spec.name)
+        with open(path, 'r') as yaml_file:
+            doc = yaml.safe_load(yaml_file).get('Specification')
+
+        doc_id = doc.get('ID')
+        doc_id = str(doc_id)
+        file_prefix = '0'*(3-len(doc_id)) + doc_id
+        output = template.render(spec=doc)
+        outpath = os.path.join(
+            os.getcwd(),
+            'assessments',
+            specification_type,
+            f'{file_prefix}.md'
+        )
+        with open(outpath, 'w') as outfile:
+            outfile.write(output)
+
 @cli.group()
 def specifications():
     """Informational command on Specifications"""
@@ -146,13 +170,13 @@ def update(after, key, specification_type, value, start):
     The AFTER argument is to be given in dot-format for the accessor path from which
     to insert the new key-value pair. Ex "Specification.ID"
     """
-    specs = files(f'finopspp.specifications.{specification_type}')
-    for spec in specs.iterdir():
+    specs_files = files(f'finopspp.specifications.{specification_type}')
+    for spec in specs_files.iterdir():
         number, _ = os.path.splitext(spec.name)
         if int(number) < start:
             continue
 
-        path = specs.joinpath(spec.name)
+        path = specs_files.joinpath(spec.name)
         with open(path, 'r') as yaml_file:
             base_doc = yaml.safe_load(yaml_file)
 
