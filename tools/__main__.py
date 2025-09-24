@@ -82,6 +82,10 @@ def framework(profile):
         ).get('Specification')
 
     domains = []
+    if not doc.get('Domains'):
+        click.echo('Profile includes no domains. Exiting without rendering framework markdown')
+        return
+
     for domain in doc.get('Domains'):
         capabilities = []
 
@@ -98,6 +102,9 @@ def framework(profile):
             'name': title,
             'capabilities': capabilities
         })
+        if not doc.get('Capabilities'):
+            continue
+
         for capability in doc.get('Capabilities'):
             actions = []
 
@@ -114,6 +121,9 @@ def framework(profile):
                 'name': title,
                 'actions': actions
             })
+            if not doc.get('Actions'):
+                continue
+
             for action in doc.get('Actions'):
                 doc = sub_specification_helper(action, action_files)
 

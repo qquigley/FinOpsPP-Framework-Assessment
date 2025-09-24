@@ -21,4 +21,6 @@ Specification:
   - ID: 14
   - ID: 15
   - ID: 17
-  Overrides: null
+  Overrides:
+  - Profile: FinOps++
+    DropIDs: [6]

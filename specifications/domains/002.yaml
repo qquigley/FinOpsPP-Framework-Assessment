@@ -20,7 +20,7 @@ Specification:
   - ID: 22
   Overrides:
   - Profile: FinOps++
-    ChangeTitle: Usage & Cost
-    ChangeDescription: Domain for understanding, as well as optimizing usage as cost
-    DropIDs: [7]
     AddIDs: [1, 2, 8, 20]
+    DropIDs: [7]
+    TitleUpdate: Usage & Cost
+    DescriptionUpdate: Domain for understanding, as well as optimizing usage as cost

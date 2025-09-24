@@ -7,13 +7,13 @@
     </tr>
     <tr>
         <td>
-        <b>Manage the FinOps Practice</b>
+        <b><a href="/assessments/domains/001.md">001</a>: Manage the FinOps Practice</b>
         </td>
         <td>
         <table>
             <tr>
                 <td>
-                Cloud Policy & Governance
+                <a href="/assessments/capabilities/006.md">006</a>: Cloud Policy & Governance
                 </td>
                 <td>
                 <table>
@@ -47,7 +47,7 @@
             </tr>
             <tr>
                 <td>
-                FinOps Assessment
+                <a href="/assessments/capabilities/009.md">009</a>: FinOps Assessment
                 </td>
                 <td>
                 <table>
@@ -81,7 +81,7 @@
             </tr>
             <tr>
                 <td>
-                FinOps Education & Enablement
+                <a href="/assessments/capabilities/010.md">010</a>: FinOps Education & Enablement
                 </td>
                 <td>
                 <table>
@@ -115,7 +115,7 @@
             </tr>
             <tr>
                 <td>
-                FinOps Practice Operations
+                <a href="/assessments/capabilities/011.md">011</a>: FinOps Practice Operations
                 </td>
                 <td>
                 <table>
@@ -154,7 +154,7 @@
             </tr>
             <tr>
                 <td>
-                FinOps Tools & Services
+                <a href="/assessments/capabilities/012.md">012</a>: FinOps Tools & Services
                 </td>
                 <td>
                 <table>
@@ -188,7 +188,7 @@
             </tr>
             <tr>
                 <td>
-                Intersecting Disciplines
+                <a href="/assessments/capabilities/014.md">014</a>: Intersecting Disciplines
                 </td>
                 <td>
                 <table>
@@ -227,7 +227,7 @@
             </tr>
             <tr>
                 <td>
-                Invoicing & Chargeback
+                <a href="/assessments/capabilities/015.md">015</a>: Invoicing & Chargeback
                 </td>
                 <td>
                 <table>
@@ -266,7 +266,7 @@
             </tr>
             <tr>
                 <td>
-                Onboarding Workloads
+                <a href="/assessments/capabilities/016.md">016</a>: Onboarding Workloads
                 </td>
                 <td>
                 <table>
@@ -308,13 +308,13 @@
     </tr>
     <tr>
         <td>
-        <b>Optimize Usage & Cost</b>
+        <b><a href="/assessments/domains/002.md">002</a>: Optimize Usage & Cost</b>
         </td>
         <td>
         <table>
             <tr>
                 <td>
-                Architecting for Cloud
+                <a href="/assessments/capabilities/003.md">003</a>: Architecting for Cloud
                 </td>
                 <td>
                 <table>
@@ -353,7 +353,7 @@
             </tr>
             <tr>
                 <td>
-                Cloud Sustainability
+                <a href="/assessments/capabilities/007.md">007</a>: Cloud Sustainability
                 </td>
                 <td>
                 <table>
@@ -392,7 +392,7 @@
             </tr>
             <tr>
                 <td>
-                Licensing & SaaS
+                <a href="/assessments/capabilities/016.md">016</a>: Licensing & SaaS
                 </td>
                 <td>
                 <table>
@@ -431,7 +431,7 @@
             </tr>
             <tr>
                 <td>
-                Rate Optimization
+                <a href="/assessments/capabilities/019.md">019</a>: Rate Optimization
                 </td>
                 <td>
                 <table>
@@ -470,7 +470,7 @@
             </tr>
             <tr>
                 <td>
-                Workload Optimization
+                <a href="/assessments/capabilities/022.md">022</a>: Workload Optimization
                 </td>
                 <td>
                 <table>
@@ -512,13 +512,13 @@
     </tr>
     <tr>
         <td>
-        <b>Quantify Business Value</b>
+        <b><a href="/assessments/domains/003.md">003</a>: Quantify Business Value</b>
         </td>
         <td>
         <table>
             <tr>
                 <td>
-                Benchmarking
+                <a href="/assessments/capabilities/004.md">004</a>: Benchmarking
                 </td>
                 <td>
                 <table>
@@ -557,7 +557,7 @@
             </tr>
             <tr>
                 <td>
-                Budgeting
+                <a href="/assessments/capabilities/005.md">005</a>: Budgeting
                 </td>
                 <td>
                 <table>
@@ -596,7 +596,7 @@
             </tr>
             <tr>
                 <td>
-                Forecasting
+                <a href="/assessments/capabilities/013.md">013</a>: Forecasting
                 </td>
                 <td>
                 <table>
@@ -635,7 +635,7 @@
             </tr>
             <tr>
                 <td>
-                Planning & Estimating
+                <a href="/assessments/capabilities/018.md">018</a>: Planning & Estimating
                 </td>
                 <td>
                 <table>
@@ -679,7 +679,7 @@
             </tr>
             <tr>
                 <td>
-                Unit Economics
+                <a href="/assessments/capabilities/021.md">021</a>: Unit Economics
                 </td>
                 <td>
                 <table>
@@ -721,49 +721,66 @@
     </tr>
     <tr>
         <td>
-        <b>Understand Usage & Cost</b>
+        <b>Governance</b>
         </td>
         <td>
         <table>
             <tr>
                 <td>
-                Allocation
+                Organizational Context
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Risk Management Strategy
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Roles, Responsabilities, Authorities
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Policy
                 </td>
                 <td>
                 <table>
                     <tr>
                         <td>
-                        <a href="/assessments/actions/009.md">009</a>: Define metadata & hierarchy strategy; map to business units/products.
+                        <a href="/assessments/actions/102.md">102</a>: Draft clear, goal-aligned cloud financial policies (what "good" looks like).
                         </td>
                     </tr>
                     <tr>
                         <td>
-                        <a href="/assessments/actions/010.md">010</a>: Identify shared costs; agree apportionment rules and document them.
+                        <a href="/assessments/actions/103.md">103</a>: Publish guidelines, guardrails, and automation controls.
                         </td>
                     </tr>
                     <tr>
                         <td>
-                        <a href="/assessments/actions/011.md">011</a>: Publish allocation taxonomy; include overlays (project, app ID, cost center).
+                        <a href="/assessments/actions/104.md">104</a>: Enable/educate stakeholders on policy expectations and exceptions.
                         </td>
                     </tr>
                     <tr>
                         <td>
-                        <a href="/assessments/actions/012.md">012</a>: Implement tagging/labeling standards; educate and enforce.
+                        <a href="/assessments/actions/105.md">105</a>: Monitor compliance; report breaches with remediation paths.
                         </td>
                     </tr>
                     <tr>
                         <td>
-                        <a href="/assessments/actions/013.md">013</a>: Validate allocation compliance; report gaps and financial impact.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/014.md">014</a>: Automate parsing/enforcement (policies, CI/CD checks, tag bots).
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/015.md">015</a>: Iterate strategies and communicate changes broadly.
+                        <a href="/assessments/actions/106.md">106</a>: Iterate policies based on outcomes and stakeholder feedback.
                         </td>
                     </tr>
                 </table>
@@ -771,138 +788,136 @@
             </tr>
             <tr>
                 <td>
-                Anomaly Management
+                Risk Assessment
                 </td>
                 <td>
                 <table>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/023.md">023</a>: Configure detection for total cost spikes, cost/usage rate shifts, unit drops.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/024.md">024</a>: Define severity tiers, thresholds, and response SLAs; publish runbooks.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/025.md">025</a>: Automate alert routing to owners via existing channels (email/Slack/Teams).
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/026.md">026</a>: Record each anomaly with context, scope, impact, and timeline.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/027.md">027</a>: Analyze root causes; fix tags, allocation rules, or usage issues.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/028.md">028</a>: Track metrics (detection/notification/resolution time, false positives, avoidance).
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/029.md">029</a>: Tune thresholds regularly to reduce noise, increase trust.
-                        </td>
-                    </tr>
                 </table>
                 </td>
             </tr>
             <tr>
                 <td>
-                Data Ingestion
+                Improvement
                 </td>
                 <td>
                 <table>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/002.md">002</a>: Inventory all data sources (CSP cost/usage, performance, on-prem, internal).
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/002.md">002</a>: Choose tooling to land/validate datasets.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/003.md">003</a>: Create landing zones with access controls, retention, and permissions.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/004.md">004</a>: Define data granularity and ingestion frequency; include mandatory metadata.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/005.md">005</a>: Document normalization/augmentation rules and owners; version them.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/006.md">006</a>: Implement data quality checks, SLAs, and runbooks; monitor failures.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/007.md">007</a>: Build dashboards/alerts for ingestion anomalies; triage and resolve.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/008.md">008</a>: Continuously optimize pipelines for timeliness and cost.
-                        </td>
-                    </tr>
+                </table>
+                </td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <b>Incident Response</b>
+        </td>
+        <td>
+        <table>
+            <tr>
+                <td>
+                Cost Spikes
+                </td>
+                <td>
+                <table>
                 </table>
                 </td>
             </tr>
             <tr>
                 <td>
-                Reporting & Analytics
+                Policy Violation
                 </td>
                 <td>
                 <table>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/016.md">016</a>: Gather persona‑specific requirements; define KPIs/OKRs and glossary.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/017.md">017</a>: Enrich billing with business logic (amortization, discounts, mappings).
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/018.md">018</a>: Build dashboards for routine, showback, investigative, and ad hoc views.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/019.md">019</a>: Publish documentation, data sensitivity rules, and support channels.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/020.md">020</a>: Embed reports into workflows (Slack/Jira/Teams) and set alerting.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/021.md">021</a>: Track adoption/usage; run A/B revisions; manage changes via staging.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/022.md">022</a>: Iterate based on feedback and outcome metrics, not just views.
-                        </td>
-                    </tr>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                FinOps System Down
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Continuous Monitoring
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Adverse Event Analysis
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Incident Management
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Incident Analysis
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Incident Response Reporting & Communication
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Incident Mitigation
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Incident Recovery Plan Execution
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Incident Recovery Communication
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                RCA
+                </td>
+                <td>
+                <table>
                 </table>
                 </td>
             </tr>
