@@ -148,8 +148,8 @@ def framework(profile):
         title = doc.get('Title')
         if override.get('TitleUpdate'):
             title = override.get('TitleUpdate')
-        if not doc.get('Capabilities'):
-            continue
+        if doc.get('Capabilities') is None:
+            doc['Capabilities'] = []
         if not isinstance(doc.get('Capabilities'), list):
             click.echo(
                 'Capabilities for domain={title} must be null or a list. Exiting'
@@ -177,8 +177,8 @@ def framework(profile):
             title = doc.get('Title')
             if override.get('TitleUpdate'):
                 title = override.get('TitleUpdate')
-            if not doc.get('Actions'):
-                continue
+            if doc.get('Actions') is None:
+                doc['Actions'] = []
             if not isinstance(doc.get('Actions'), list):
                 click.echo(
                     'Actions for capability={title} must be null or a list. Exiting'

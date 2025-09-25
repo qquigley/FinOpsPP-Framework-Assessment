@@ -995,6 +995,33 @@
         <table>
             <tr>
                 <td>
+                Organizational Context
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Risk Management Strategy
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Roles, Responsabilities, Authorities
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
                 Policy
                 </td>
                 <td>
@@ -1027,6 +1054,24 @@
                 </table>
                 </td>
             </tr>
+            <tr>
+                <td>
+                Risk Assessment
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Improvement
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
         </table>
         </td>
     </tr>
@@ -1036,6 +1081,114 @@
         </td>
         <td>
         <table>
+            <tr>
+                <td>
+                Cost Spikes
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Policy Violation
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                FinOps System Down
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Continuous Monitoring
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Adverse Event Analysis
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Incident Management
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Incident Analysis
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Incident Response Reporting & Communication
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Incident Mitigation
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Incident Recovery Plan Execution
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Incident Recovery Communication
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                RCA
+                </td>
+                <td>
+                <table>
+                </table>
+                </td>
+            </tr>
         </table>
         </td>
     </tr>
