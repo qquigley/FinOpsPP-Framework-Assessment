@@ -13,40 +13,6 @@
         <table>
             <tr>
                 <td>
-                <a href="/assessments/capabilities/006.md">006</a>: Cloud Policy & Governance
-                </td>
-                <td>
-                <table>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/102.md">102</a>: Draft clear, goal-aligned cloud financial policies (what "good" looks like).
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/103.md">103</a>: Publish guidelines, guardrails, and automation controls.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/104.md">104</a>: Enable/educate stakeholders on policy expectations and exceptions.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/105.md">105</a>: Monitor compliance; report breaches with remediation paths.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/106.md">106</a>: Iterate policies based on outcomes and stakeholder feedback.
-                        </td>
-                    </tr>
-                </table>
-                </td>
-            </tr>
-            <tr>
-                <td>
                 <a href="/assessments/capabilities/009.md">009</a>: FinOps Assessment
                 </td>
                 <td>
@@ -346,45 +312,6 @@
                     <tr>
                         <td>
                         <a href="/assessments/actions/066.md">066</a>: Strengthen app/security/infra architect collaboration and approvals.
-                        </td>
-                    </tr>
-                </table>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                <a href="/assessments/capabilities/007.md">007</a>: Cloud Sustainability
-                </td>
-                <td>
-                <table>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/085.md">085</a>: Aggregate emissions data by region/service/account with lineage.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/086.md">086</a>: Define sustainability metrics/targets.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/087.md">087</a>: Include carbon impact in migration/optimization decisions and PRDs.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/088.md">088</a>: Enable engineering with carbon-aware data and scheduling guidance.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/089.md">089</a>: Continuously improve data quality and report progress on dashboards.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="/assessments/actions/090.md">090</a>: Tie sustainability wins to cost efficiency where possible.
                         </td>
                     </tr>
                 </table>

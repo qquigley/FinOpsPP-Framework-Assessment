@@ -157,8 +157,6 @@ def framework(profile):
             sys.exit(1)
 
         doc_id = doc.get('ID')
-        if doc_id and doc_id in domain_override.get('DropIDs'):
-            continue
         if doc_id:
             doc_id = str(doc.get('ID'))
             file = '0'*(3-len(doc_id)) + doc_id
@@ -173,6 +171,12 @@ def framework(profile):
             actions = []
 
             doc = sub_specification_helper(capability, cap_files)
+
+            # continue early if the Capability ID is one to be dropped
+            doc_id = doc.get('ID')
+            if doc_id and doc_id in domain_override.get('DropIDs'):
+                continue
+
             cap_override = overrides_helper(doc, profile)
 
             title = doc.get('Title')
@@ -186,9 +190,6 @@ def framework(profile):
                 )
                 sys.exit(1)
 
-            doc_id = doc.get('ID')
-            if doc_id and doc_id in cap_override.get('DropIDs'):
-                continue
             if doc_id:
                 doc_id = str(doc.get('ID'))
                 file = '0'*(3-len(doc_id)) + doc_id
@@ -202,7 +203,12 @@ def framework(profile):
             for action in doc.get('Actions'):
                 doc = sub_specification_helper(action, action_files)
 
-                doc_id = str(doc.get('ID'))
+                # continue early if the Action ID is one to be dropped
+                doc_id = doc.get('ID')
+                if doc_id and doc_id in cap_override.get('DropIDs'):
+                    continue
+
+                doc_id = str(doc_id)
                 description = doc.get('Description')
                 file = '0'*(3-len(doc_id)) + doc_id
                 action = f'<a href="/assessments/actions/{file}.md">{file}</a>: {description}'
