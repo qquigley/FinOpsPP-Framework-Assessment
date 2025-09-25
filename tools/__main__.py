@@ -143,11 +143,11 @@ def framework(profile):
         capabilities = []
 
         doc = sub_specification_helper(domain, domain_files)
-        override = overrides_helper(doc, profile)
+        domain_override = overrides_helper(doc, profile)
 
         title = doc.get('Title')
-        if override.get('TitleUpdate'):
-            title = override.get('TitleUpdate')
+        if domain_override.get('TitleUpdate'):
+            title = domain_override.get('TitleUpdate')
         if doc.get('Capabilities') is None:
             doc['Capabilities'] = []
         if not isinstance(doc.get('Capabilities'), list):
@@ -157,7 +157,7 @@ def framework(profile):
             sys.exit(1)
 
         doc_id = doc.get('ID')
-        if doc_id and doc_id in override.get('DropIDs'):
+        if doc_id and doc_id in domain_override.get('DropIDs'):
             continue
         if doc_id:
             doc_id = str(doc.get('ID'))
@@ -168,15 +168,16 @@ def framework(profile):
             'name': title,
             'capabilities': capabilities
         })
-        doc.get('Capabilities').extend(override.get('AddIDs'))
+        doc.get('Capabilities').extend(domain_override.get('AddIDs'))
         for capability in doc.get('Capabilities'):
             actions = []
 
             doc = sub_specification_helper(capability, cap_files)
+            cap_override = overrides_helper(doc, profile)
 
             title = doc.get('Title')
-            if override.get('TitleUpdate'):
-                title = override.get('TitleUpdate')
+            if cap_override.get('TitleUpdate'):
+                title = cap_override.get('TitleUpdate')
             if doc.get('Actions') is None:
                 doc['Actions'] = []
             if not isinstance(doc.get('Actions'), list):
@@ -186,7 +187,7 @@ def framework(profile):
                 sys.exit(1)
 
             doc_id = doc.get('ID')
-            if doc_id and doc_id in override.get('DropIDs'):
+            if doc_id and doc_id in cap_override.get('DropIDs'):
                 continue
             if doc_id:
                 doc_id = str(doc.get('ID'))
@@ -197,7 +198,7 @@ def framework(profile):
                 'name': title,
                 'actions': actions
             })
-            doc.get('Actions').extend(override.get('AddIDs'))
+            doc.get('Actions').extend(cap_override.get('AddIDs'))
             for action in doc.get('Actions'):
                 doc = sub_specification_helper(action, action_files)
 
