@@ -79,28 +79,28 @@ def overrides_helper(doc, profile):
 
         add_ids = override.get('AddIDs')
         if isinstance(add_ids, list):
-            formatted_ids = []
+            validated_ids = []
             for add_id in add_ids:
                 if not isinstance(add_id, int):
                     click.echo('IDs in AddIDs must be an integer. Exiting')
                     sys.exit(1)
 
-            formatted_ids.append({'ID': add_id})
-            full_override['AddIDs'] = formatted_ids
+                validated_ids.append({'ID': add_id})
+            full_override['AddIDs'] = validated_ids
         elif add_ids is not None:
             click.echo('AddIDs, if set, must be null or a list. Exiting')
             sys.exit(1)
 
         drop_ids = override.get('DropIDs')
         if isinstance(drop_ids, list):
-            formatted_ids = []
+            validated_ids = []
             for drop_id in drop_ids:
                 if not isinstance(drop_id, int):
                     click.echo('IDs in DropIDs must be an integer. Exiting')
                     sys.exit(1)
 
-            formatted_ids.append({'ID': drop_id})
-            full_override['DropIDs'] = drop_ids
+                validated_ids.append(drop_id)
+            full_override['DropIDs'] = validated_ids
         elif drop_ids is not None:
             click.echo('DropIDs, if set, must be null or a list. Exiting')
             sys.exit(1)
@@ -157,6 +157,8 @@ def framework(profile):
             sys.exit(1)
 
         doc_id = doc.get('ID')
+        if doc_id and doc_id in override.get('DropIDs'):
+            continue
         if doc_id:
             doc_id = str(doc.get('ID'))
             file = '0'*(3-len(doc_id)) + doc_id
@@ -184,7 +186,7 @@ def framework(profile):
                 sys.exit(1)
 
             doc_id = doc.get('ID')
-            if doc_id in override.get('DropIDs'):
+            if doc_id and doc_id in override.get('DropIDs'):
                 continue
             if doc_id:
                 doc_id = str(doc.get('ID'))

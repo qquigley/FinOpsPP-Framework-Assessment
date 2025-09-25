@@ -316,6 +316,21 @@
                     </tr>
                     <tr>
                         <td>
+                        <a href="/assessments/actions/002.md">002</a>: Inventory all data sources (CSP cost/usage, performance, on-prem, internal).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/002.md">002</a>: Choose tooling to land/validate datasets.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/008.md">008</a>: Continuously optimize pipelines for timeliness and cost.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
                         <a href="/assessments/actions/020.md">020</a>: Embed reports into workflows (Slack/Jira/Teams) and set alerting.
                         </td>
                     </tr>
@@ -356,6 +371,21 @@
                     <tr>
                         <td>
                         <a href="/assessments/actions/078.md">078</a>: Publish license/SaaS spend and utilization to stakeholders regularly.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/002.md">002</a>: Inventory all data sources (CSP cost/usage, performance, on-prem, internal).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/002.md">002</a>: Choose tooling to land/validate datasets.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/008.md">008</a>: Continuously optimize pipelines for timeliness and cost.
                         </td>
                     </tr>
                     <tr>
@@ -404,6 +434,21 @@
                     </tr>
                     <tr>
                         <td>
+                        <a href="/assessments/actions/002.md">002</a>: Inventory all data sources (CSP cost/usage, performance, on-prem, internal).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/002.md">002</a>: Choose tooling to land/validate datasets.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/008.md">008</a>: Continuously optimize pipelines for timeliness and cost.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
                         <a href="/assessments/actions/020.md">020</a>: Embed reports into workflows (Slack/Jira/Teams) and set alerting.
                         </td>
                     </tr>
@@ -444,6 +489,218 @@
                     <tr>
                         <td>
                         <a href="/assessments/actions/072.md">072</a>: Track KPI deltas (CPU/GB-hrs, idle %, savings rate); document playbooks.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/002.md">002</a>: Inventory all data sources (CSP cost/usage, performance, on-prem, internal).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/002.md">002</a>: Choose tooling to land/validate datasets.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/008.md">008</a>: Continuously optimize pipelines for timeliness and cost.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/020.md">020</a>: Embed reports into workflows (Slack/Jira/Teams) and set alerting.
+                        </td>
+                    </tr>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <a href="/assessments/capabilities/001.md">001</a>: Usage & Cost
+                </td>
+                <td>
+                <table>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/009.md">009</a>: Define metadata & hierarchy strategy; map to business units/products.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/010.md">010</a>: Identify shared costs; agree apportionment rules and document them.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/011.md">011</a>: Publish allocation taxonomy; include overlays (project, app ID, cost center).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/012.md">012</a>: Implement tagging/labeling standards; educate and enforce.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/013.md">013</a>: Validate allocation compliance; report gaps and financial impact.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/014.md">014</a>: Automate parsing/enforcement (policies, CI/CD checks, tag bots).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/015.md">015</a>: Iterate strategies and communicate changes broadly.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/002.md">002</a>: Inventory all data sources (CSP cost/usage, performance, on-prem, internal).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/002.md">002</a>: Choose tooling to land/validate datasets.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/008.md">008</a>: Continuously optimize pipelines for timeliness and cost.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/020.md">020</a>: Embed reports into workflows (Slack/Jira/Teams) and set alerting.
+                        </td>
+                    </tr>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <a href="/assessments/capabilities/002.md">002</a>: Usage & Cost
+                </td>
+                <td>
+                <table>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/023.md">023</a>: Configure detection for total cost spikes, cost/usage rate shifts, unit drops.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/024.md">024</a>: Define severity tiers, thresholds, and response SLAs; publish runbooks.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/025.md">025</a>: Automate alert routing to owners via existing channels (email/Slack/Teams).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/026.md">026</a>: Record each anomaly with context, scope, impact, and timeline.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/027.md">027</a>: Analyze root causes; fix tags, allocation rules, or usage issues.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/028.md">028</a>: Track metrics (detection/notification/resolution time, false positives, avoidance).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/029.md">029</a>: Tune thresholds regularly to reduce noise, increase trust.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/002.md">002</a>: Inventory all data sources (CSP cost/usage, performance, on-prem, internal).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/002.md">002</a>: Choose tooling to land/validate datasets.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/008.md">008</a>: Continuously optimize pipelines for timeliness and cost.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/020.md">020</a>: Embed reports into workflows (Slack/Jira/Teams) and set alerting.
+                        </td>
+                    </tr>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <a href="/assessments/capabilities/008.md">008</a>: Usage & Cost
+                </td>
+                <td>
+                <table>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/002.md">002</a>: Inventory all data sources (CSP cost/usage, performance, on-prem, internal).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/002.md">002</a>: Choose tooling to land/validate datasets.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/003.md">003</a>: Create landing zones with access controls, retention, and permissions.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/004.md">004</a>: Define data granularity and ingestion frequency; include mandatory metadata.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/005.md">005</a>: Document normalization/augmentation rules and owners; version them.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/006.md">006</a>: Implement data quality checks, SLAs, and runbooks; monitor failures.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/007.md">007</a>: Build dashboards/alerts for ingestion anomalies; triage and resolve.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/008.md">008</a>: Continuously optimize pipelines for timeliness and cost.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/002.md">002</a>: Inventory all data sources (CSP cost/usage, performance, on-prem, internal).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/002.md">002</a>: Choose tooling to land/validate datasets.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/008.md">008</a>: Continuously optimize pipelines for timeliness and cost.
                         </td>
                     </tr>
                     <tr>
@@ -493,6 +750,21 @@
                     <tr>
                         <td>
                         <a href="/assessments/actions/022.md">022</a>: Iterate based on feedback and outcome metrics, not just views.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/002.md">002</a>: Inventory all data sources (CSP cost/usage, performance, on-prem, internal).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/002.md">002</a>: Choose tooling to land/validate datasets.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="/assessments/actions/008.md">008</a>: Continuously optimize pipelines for timeliness and cost.
                         </td>
                     </tr>
                     <tr>
