@@ -7,7 +7,7 @@
 ## Capabilities
 
 {% for capability in spec.Capabilities -%}
-- [{{ capability.ID }}](/assessments/capabilities/{{ '0'*(3-capability.ID|string|length) + capability.ID|string }}.md)
+- [{{ capability.ID }}]({{ capability.File }}): {{ capability.Title }}
 {% endfor %}
 {% if spec.Overrides %}## Overrides
 

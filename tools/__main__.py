@@ -22,6 +22,13 @@ def profiles():
     
     return PROFILES_MAP
 
+SPEC_SUBSPEC_MAP = {
+    'profiles': 'domains',
+    'domains': 'capabilities',
+    'capabilities': 'actions',
+    'actions': '' # empty string just to help with functionality below
+}
+
 @click.group()
 def cli():
     """FinOps++ administration tool"""
@@ -228,18 +235,34 @@ def framework(profile):
 @generate.command()
 @click.option(
     '--specification-type',
-    type=click.Choice(['profiles', 'domains', 'capabilities', 'actions']),
+    type=click.Choice(list(SPEC_SUBSPEC_MAP.keys())),
     help='Which specification type to show. Defaults to "profiles"'
 )
 def specifications(specification_type):
     """Generate Framework markdown files from their specifications"""
+    # pull in template and specification files for given specification type
     env = Environment(loader=PackageLoader('finopspp', 'templates'))
     template = env.get_template(f'{specification_type}.md.j2')
     spec_files = files(f'finopspp.specifications.{specification_type}')
+    
+    # get subspec to help fill in names and other important pieces of
+    # information from the sub specification.
+    subspec_type = SPEC_SUBSPEC_MAP[specification_type]
+    subspec_files = None
+    if subspec_type:
+        subspec_files = files(f'finopspp.specifications.{subspec_type}')
+
+    # iterate over the specification files and generate markdown files
     for spec in spec_files.iterdir():
         path = spec_files.joinpath(spec.name)
         with open(path, 'r') as yaml_file:
             doc = yaml.safe_load(yaml_file).get('Specification')
+
+        for subspec in doc.get(subspec_type.capitalize(), []):
+            subdoc = sub_specification_helper(subspec, subspec_files)
+            subdoc_id = str(subdoc.get('ID'))
+            subspec['File'] = f'/assessments/{subspec_type}/{"0"*(3-len(subdoc_id))}{subdoc_id}.md'
+            subspec['Title'] = subdoc.get('Title')
 
         doc_id = doc.get('ID')
         doc_id = str(doc_id)
@@ -262,7 +285,7 @@ def specifications():
 @specifications.command()
 @click.option(
     '--specification-type',
-    type=click.Choice(['profiles', 'domains', 'capabilities', 'actions']),
+    type=click.Choice(list(SPEC_SUBSPEC_MAP.keys())),
     help='Which specification type to show. Defaults to "profiles"'
 )
 @click.option(
@@ -372,7 +395,7 @@ def list_specs(profile):
 )
 @click.option(
     '--specification-type',
-    type=click.Choice(['profiles', 'domains', 'capabilities', 'actions']),
+    type=click.Choice(list(SPEC_SUBSPEC_MAP.keys())),
     default='profiles',
     help='Which specification type to show. Defaults to "profiles"'
 )

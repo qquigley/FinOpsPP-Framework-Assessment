@@ -7,7 +7,7 @@
 ## Actions
 
 {% for action in spec.Actions -%}
-- [{{ action.ID }}](/assessments/actions/{{ '0'*(3-action.ID|string|length) + action.ID|string }}.md)
+- [{{ action.ID }}]({{ action.File }}): {{ action.Title }}
 {% endfor %}
 {% if spec.Overrides %}## Overrides
 
