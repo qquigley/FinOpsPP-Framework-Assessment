@@ -1,4 +1,5 @@
 import os
+import sys
 from importlib.resources import files
 
 import click
@@ -61,6 +62,58 @@ def sub_specification_helper(doc, spec_file):
     with open(spec_file.joinpath(f'{file}.yaml'), 'r') as yaml_file:
         return yaml.safe_load(yaml_file).get('Specification')
 
+def overrides_helper(doc, profile):
+    """Helper for receiving the overrides for a profile if they exist
+    
+    Also ensure that if an override exists, it conforms to the specification of an
+    override
+    """
+    overrides = doc.get('Overrides')
+    if not overrides:
+        overrides = []
+
+    full_override = {'AddIDs': [], 'DropIDs': [], 'TitleUpdate': None}
+    for override in overrides:
+        if override.get('Profile') != profile:
+            continue
+
+        add_ids = override.get('AddIDs')
+        if isinstance(add_ids, list):
+            formatted_ids = []
+            for add_id in add_ids:
+                if not isinstance(add_id, int):
+                    click.echo('IDs in AddIDs must be an integer. Exiting')
+                    sys.exit(1)
+
+            formatted_ids.append({'ID': add_id})
+            full_override['AddIDs'] = formatted_ids
+        elif add_ids is not None:
+            click.echo('AddIDs, if set, must be null or a list. Exiting')
+            sys.exit(1)
+
+        drop_ids = override.get('DropIDs')
+        if isinstance(drop_ids, list):
+            formatted_ids = []
+            for drop_id in drop_ids:
+                if not isinstance(drop_id, int):
+                    click.echo('IDs in DropIDs must be an integer. Exiting')
+                    sys.exit(1)
+
+            formatted_ids.append({'ID': drop_id})
+            full_override['DropIDs'] = drop_ids
+        elif drop_ids is not None:
+            click.echo('DropIDs, if set, must be null or a list. Exiting')
+            sys.exit(1)
+
+        title_update = override.get('TitleUpdate')
+        if isinstance(title_update, str):
+            full_override['TitleUpdate'] = title_update
+        elif title_update is not None:
+            click.echo('TitleUpdate, if set, must be null or a str. Exiting')
+            sys.exit(1)
+    
+    return full_override
+
 @generate.command()
 @click.option(
     '--profile',
@@ -83,15 +136,26 @@ def framework(profile):
 
     domains = []
     if not doc.get('Domains'):
-        click.echo('Profile includes no domains. Exiting without rendering framework markdown')
-        return
+        click.echo('Profile includes no domains. Exiting')
+        sys.exit(1)
 
     for domain in doc.get('Domains'):
         capabilities = []
 
         doc = sub_specification_helper(domain, domain_files)
+        override = overrides_helper(doc, profile)
 
         title = doc.get('Title')
+        if override.get('TitleUpdate'):
+            title = override.get('TitleUpdate')
+        if not doc.get('Capabilities'):
+            continue
+        if not isinstance(doc.get('Capabilities'), list):
+            click.echo(
+                'Capabilities for domain={title} must be null or a list. Exiting'
+            )
+            sys.exit(1)
+
         doc_id = doc.get('ID')
         if doc_id:
             doc_id = str(doc.get('ID'))
@@ -102,16 +166,26 @@ def framework(profile):
             'name': title,
             'capabilities': capabilities
         })
-        if not doc.get('Capabilities'):
-            continue
-
+        doc.get('Capabilities').extend(override.get('AddIDs'))
         for capability in doc.get('Capabilities'):
             actions = []
 
             doc = sub_specification_helper(capability, cap_files)
 
             title = doc.get('Title')
+            if override.get('TitleUpdate'):
+                title = override.get('TitleUpdate')
+            if not doc.get('Actions'):
+                continue
+            if not isinstance(doc.get('Actions'), list):
+                click.echo(
+                    'Actions for capability={title} must be null or a list. Exiting'
+                )
+                sys.exit(1)
+
             doc_id = doc.get('ID')
+            if doc_id in override.get('DropIDs'):
+                continue
             if doc_id:
                 doc_id = str(doc.get('ID'))
                 file = '0'*(3-len(doc_id)) + doc_id
@@ -121,9 +195,7 @@ def framework(profile):
                 'name': title,
                 'actions': actions
             })
-            if not doc.get('Actions'):
-                continue
-
+            doc.get('Actions').extend(override.get('AddIDs'))
             for action in doc.get('Actions'):
                 doc = sub_specification_helper(action, action_files)
 
