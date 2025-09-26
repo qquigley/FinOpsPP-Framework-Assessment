@@ -1,0 +1,18 @@
+# {{ spec.ID }}: {{ spec.Title | title }}
+
+## Descriptive Statement
+
+{{ spec.Description }}
+
+## Actions
+
+{% for action in spec.Actions -%}
+- [{{ action.ID }}]({{ action.File }}): {{ action.Title }}
+{% endfor %}
+{% if spec.Overrides %}## Overrides
+
+| Profile | Add IDs | Drop IDs | Title Update | Description Update |
+| ------- | ------- | -------- | ------------ | ------------------ |
+{%- for override in spec.Overrides %}
+| {{ override.Profile }} | {{ override.AddIDs|default('[]') }} | {{ override.DropIDs|default('[]') }} | {{ override.TitleUpdate|default('None') }} | {{ override.DescriptionUpdate|default('None') }} |
+{%- endfor %}{% endif %}

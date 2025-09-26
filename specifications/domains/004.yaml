@@ -17,6 +17,4 @@ Specification:
   - ID: 2
   - ID: 8
   - ID: 20
-  Overrides:
-  - Profile: FinOps++
-    Drop: true
+  Overrides: null
