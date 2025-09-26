@@ -34,7 +34,12 @@ you can run `finopspp generate framework --help` to see the list of profile opti
 
 ### Specification Markdown
 
-These files are designed to be generally more human readable and easier to navigate than the yaml specifications. The four specification types supported currently by `finopspp` are `profiles`, `domains`, `capabilities`, and `actions` and can be found in subdirectories of the same names under [assessments](/assessments).
+These files are designed to be generally more human readable and easier to navigate than the yaml specifications. The four specification types supported currently by `finopspp` are `profiles`, `domains`, `capabilities`, and `actions` and can be found in subdirectories of the same names under 
+
+- [assessments/profiles](/assessments/profiles/)
+- [assessments/domains](/assessments/domains/)
+- [assessments/capabilities](/assessments/capabilities/)
+- [assessments/actions](/assessments/actions/)
 
 > **_NOTE_**: `profiles` markdown files are generated and offered on an as-best-as-possible bases. This is because of the customization allowed for these type. Generally it is recommended to use the Framework markdown to get an overview of the profiles. But we include them for the sake of compilation.
 
