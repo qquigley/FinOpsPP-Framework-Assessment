@@ -1,0 +1,22 @@
+Metadata:
+  Proposed: 2025-09-28
+  Adoption: null
+  Modified: null
+  Version: 0.0.1
+  Status: Proposed
+  Approvers:
+  - Name: Q
+    Email: qquigley@gmail.com
+    Date: null
+Specification:
+  ID: 7
+  Title: Q's Wild Assessment
+  Description: This profile represents what Q thinks would be a good MVP for this FinOps assessment framework.
+  Domains:
+  - ID: 1
+    Actions:
+    - ID: 002
+      Overrides: null
+  - ID: 2
+  - ID: 3
+  - ID: 4
